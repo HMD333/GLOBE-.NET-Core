@@ -25,11 +25,14 @@
     /* background-color: #30070756; */
 }
 
+img{
+    display: block;
+}
+
 .bgimg img{
     width: 100%;
     height: var(--bging_height);
     object-fit: cover;
-    display: block;
 }
 
 .logo{
@@ -83,8 +86,6 @@
 }
 
 .nav_bar{
-    position: sticky;
-    top: 0;
     width: 100%;
     background-color:  var(--bgnav);
     padding: 20px 10px;
@@ -151,8 +152,8 @@ position: relative;
 }
 
 .sarch img{
-    margin-top: -5px;
     position: absolute;
+    top: -5px;
     right: 5px;
 }
 
@@ -162,19 +163,40 @@ position: relative;
 
 /* MAIN */
 main{
-    height: calc(100% - (var(--header_height) + var(--footer_height)));
+    min-height: calc(100vh - (var(--header_height) + var(--footer_height)));
+    max-height: calc(100% - (var(--header_height) + var(--footer_height)));
 }
+
 main .HOME{
     display: block;
 }
+
+main .NEWS{
+    display: none;
+}
+
+main .POLITICS{
+    display: none;
+}
+
+main .BUSINESS{
+    display: none;
+}
+
+main .SPORT{
+    display: none;
+}
+
+main .TECHNOLOGY{
+    display: none;
+}
+
 .HOME .hot{
+    position: relative;
     display: flex;
     margin: 20px;
     padding: 10px;
-}
-
-.HOME img{
-    display: block;
+    padding-top: 50px;
 }
 
 .hot .main_card{
@@ -197,7 +219,7 @@ main .most_watched{
     padding: 10px;
 }
 
-.most_watched .title{
+.title{
     border-left: 5px solid var(--dake_orange);
     padding: 0 0 3px 10px;
     font-size: 30px;
@@ -279,6 +301,31 @@ main .most_watched{
 .sup_title p{
     color: var(--ligth_footer);
     font-size: 12px;
+}
+
+main .main_contant{
+    position: relative;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.main_contant .contant_card{
+    display: flex;
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.contant_card img{
+    width: 300px;
+    height: 200px;
+}
+
+.contant_card .text{
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 28px;
+    color: var(--footer);
 }
 
 /* FOOTER */
