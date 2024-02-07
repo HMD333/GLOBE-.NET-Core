@@ -83,6 +83,8 @@
 }
 
 .nav_bar{
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color:  var(--bgnav);
     padding: 20px 10px;
@@ -160,7 +162,123 @@ position: relative;
 
 /* MAIN */
 main{
-    height: calc(100vh - (var(--header_height) + var(--footer_height)));
+    height: calc(100% - (var(--header_height) + var(--footer_height)));
+}
+main .HOME{
+    display: block;
+}
+.HOME .hot{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+.HOME img{
+    display: block;
+}
+
+.hot .main_card{
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+
+.hot .sup_card{
+    position: relative;
+    display: block;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+main .most_watched{
+    position: relative;
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+}
+
+.most_watched .title{
+    border-left: 5px solid var(--dake_orange);
+    padding: 0 0 3px 10px;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+}
+
+.most_watched .sup_card{
+    position: relative;
+    display: block;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+.main_card img{
+    width: 500px;
+    height: 250px;
+}
+
+.hot .sup_card img{
+    width: 300px;
+    height: 200px;
+}
+
+.most_watched .sup_card img{
+    width: 100%;
+    height: 200px;
+}
+
+.main_card .ops{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000079;
+    transition: 1s;
+}
+
+.main_card .ops:hover{
+    background-color: #00000041;
+    transition: .8s;
+}
+
+.main_card .text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    background-color: #00000080;
+    font-size: 22px;
+    color: var(--white);
+}
+
+
+.sup_card .text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    background-color: #00000080;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.most_watched .sup_card{
+    width: 25%;
+    align-items: center;
+}
+
+.most_watched .sup_card .text{
+    position: relative;
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--footer);
+}
+
+.sup_title p{
+    color: var(--ligth_footer);
+    font-size: 12px;
 }
 
 /* FOOTER */
@@ -213,7 +331,6 @@ footer .F_rigth{
 
 .F_logo img{
     width: 90px;
-    margin-right: 10px;
 }
 
 .F_logo .logoNews{
