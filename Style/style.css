@@ -152,6 +152,7 @@ position: relative;
 }
 
 .sarch img{
+    cursor: pointer;
     position: absolute;
     top: -5px;
     right: 5px;
@@ -167,27 +168,11 @@ main{
     max-height: calc(100% - (var(--header_height) + var(--footer_height)));
 }
 
-main .HOME{
+#HOME{
     display: block;
 }
 
-main .NEWS{
-    display: none;
-}
-
-main .POLITICS{
-    display: none;
-}
-
-main .BUSINESS{
-    display: none;
-}
-
-main .SPORT{
-    display: none;
-}
-
-main .TECHNOLOGY{
+#NEWS, #POLITICS, #BUSINESS, #SPORT, #TECHNOLOGY{
     display: none;
 }
 
