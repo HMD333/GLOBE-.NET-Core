@@ -9,6 +9,7 @@
     --orange:#f69616;
     --white:#fff;
     --dake_orange:#da5124;
+    --black:#000;
 
     /* sizes */
     --footer_height: 290px;
@@ -180,6 +181,7 @@ main{
     position: relative;
     display: flex;
     margin: 20px;
+    margin-top: 60px;
     padding: 10px;
     padding-top: 50px;
 }
@@ -222,6 +224,7 @@ main .most_watched{
 .main_card img{
     width: 500px;
     height: 250px;
+    
 }
 
 .hot .sup_card img{
@@ -232,6 +235,7 @@ main .most_watched{
 .most_watched .sup_card img{
     width: 100%;
     height: 200px;
+    transition: .5s;
 }
 
 .main_card .ops{
@@ -269,10 +273,12 @@ main .most_watched{
     background-color: #00000080;
     font-size: 18px;
     color: var(--white);
+    transition: .5s;
 }
 
 .most_watched .sup_card{
     width: 25%;
+    overflow: hidden;
     align-items: center;
 }
 
@@ -286,6 +292,17 @@ main .most_watched{
 .sup_title p{
     color: var(--ligth_footer);
     font-size: 12px;
+}
+
+.most_watched .sup_card:hover > img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.most_watched .sup_card:hover > .text{
+    padding-top: 10px;
+    font-weight: 600;
+    transition: .5s;
 }
 
 main .main_contant{
@@ -311,6 +328,169 @@ main .main_contant{
     padding: 20px 30px;
     font-size: 28px;
     color: var(--footer);
+}
+
+main .popup{
+    display: none;
+    position: relative;
+}
+
+.popup .bg_card{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    background-color: #00000083;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+}
+
+.bg_card .card{
+    z-index: 3;
+    position: relative;
+    background-color: #fadada;
+    margin-top: 60vh;
+    width: 80%;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.card .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.card .pop_left{
+    width: 50%;
+    
+}
+
+#LogIN{
+    display: block;
+}
+
+#SingUP{
+    display: none;
+}
+
+.pop_SingUP .logotext{
+    margin: 30px 160px;
+    font-size: 40px;
+}
+
+.pop_SingUP .pop_titel{
+    text-align: center;
+    margin: 30px;
+    margin-left: -10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.pop_SingUP .feeld{
+    position: relative;
+}
+
+.pop_SingUP label{
+    position: absolute;
+    left: 55px;
+    top: 25px;
+    transition: .5s;
+}
+
+.pop_SingUP input[type = "text"]{
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom-color: var(--bgnav);
+    margin: 20px 50px;
+    height: 40px;
+    width: 350px;
+}
+
+.pop_SingUP input[type = "text"]:hover ~ label{
+    top: 10px;
+    transition: .5s;
+}
+
+.pop_SingUP input[type = "text"]:focus ~ label{
+    top: -5px;
+    transition: .5s;
+}
+
+.pop_SingUP input[type = "submit"]{
+    cursor: pointer;
+    background-color: var(--white);
+    border: transparent;
+    border-radius: 10px;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 120px;
+    height: 50px;
+    width: 200px;
+    transition: 1s;
+}
+
+.pop_SingUP input[type = "submit"]:hover{
+    background-color: var(--ligth_bgnav);
+    transition: 1s;
+}
+
+.pop_SingUP .sing_up_a{
+    display: block;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.sing_up_a a{
+    color: #000;
+    text-decoration: none;
+}
+
+.card .pop_rigth{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pop_rigth img{
+    cursor: default;
+    position: absolute;
+}
+
+.pop_rigth .first{
+    top: 20px;
+    right: 130px;
+    width: 250px;
+    height: 250px;
+}
+
+.pop_rigth .secand{
+    top: 200px;
+    right: 150px;
+    width: 300px;
+    height: 200px;
+}
+
+.pop_rigth .thared{
+    top: 350px;
+    right: 150px;
+    width: 170px;
+    height: 200px;
+}
+
+.pop_rigth .forth{
+    top: 180px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 /* FOOTER */

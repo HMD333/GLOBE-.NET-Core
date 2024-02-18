@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HF2M</title>
+    <title>A.H.F.2M</title>
     <link rel="stylesheet" href="Style/style.css">
 </head>
     <body>
@@ -24,32 +24,32 @@
                 <div class="nav_item">
                     <ul>
                         <li>
-                            <a href="#" active = true id="Home">Home</a>
-                            <div class="nav_item_underline"></div>
-                        </li>
-
-                        <li id="admen">
-                            <a href="#" active = false id="News">News</a>
+                            <a href="#" active = true id="Home" onclick="Home_active()">Home</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
                         <li>
-                            <a href="#" active = false id="Politics">Politics</a>
+                            <a href="#" active = false id="News" onclick="News_active()">News</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
                         <li>
-                            <a href="#" active = false id="Business">Business</a>
+                            <a href="#" active = false id="Politics" onclick="Politics_active()">Politics</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
                         <li>
-                            <a href="#" active = false id="Sport">Sport</a>
+                            <a href="#" active = false id="Business" onclick="Business_active()">Business</a>
+                            <div class="nav_item_underline"></div>
+                        </li>
+
+                        <li>
+                            <a href="#" active = false id="Sport" onclick="Sport_active()">Sport</a>
                             <div class="nav_item_underline"></div>
                         </li>
                         
                         <li>
-                            <a href="#" active = false id="Technology">Technology</a>
+                            <a href="#" active = false id="Technology" onclick="Technology_active()">Technology</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
@@ -64,7 +64,7 @@
                         </div>
                         
                         <li>
-                            <a href="#" log_in = false id="LOGIN">LOGIN</a>
+                            <a href="#" id="LOGIN">LOGIN</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
@@ -75,6 +75,87 @@
         </header>
 
         <main>
+
+            <div class="popup" id="popup">
+                <div class="bg_card">
+                    <div class="bg_card" onclick="Close_popup()"></div>
+                    <div class="card">
+                        <img src="asedes/img/568140.png" class="close" onclick="Close_popup()">
+                        <div class="pop_left">
+                            <div class="pop_SingUP" id="SingUP">
+                                <div class="logotext">
+                                    <span class="blue">GL</span>
+                                    <span class="green">OB</span>
+                                    <span class="orange">E</span>
+                                </div>
+                                <div class="pop_titel">
+                                    Register with the GLOBE
+                                </div>
+
+                                <form>
+                                    <div class="feeld">
+                                        <input type="text" name="username" id="un">
+                                        <label for="un">User Name</label>
+                                    </div>
+                                    
+                                    <div class="feeld">
+                                        <input type="text" name="email" id="e">
+                                        <label for="e">Email</label>
+                                    </div>
+                                    
+                                    <div class="feeld">
+                                        <input type="text" name="password" id="pass">
+                                        <label for="pass">Password</label>
+                                    </div>
+                                    
+                                    <div class="feeld">
+                                        <input type="text" name="repassword" id="repass">
+                                        <label for="repass">Repassword</label>
+                                    </div>
+                                    
+                                    <input type="submit" value="Register" onclick="use_the_acount()" class="but">
+                                </form>
+                            </div>
+                            <div class="pop_SingUP" id="LogIN">
+                                <div class="logotext">
+                                    <span class="blue">GL</span>
+                                    <span class="green">OB</span>
+                                    <span class="orange">E</span>
+                                </div>
+                                <div class="pop_titel">
+                                    LOGIN with the GLOBE
+                                </div>
+
+                                <form>
+                                    <div class="feeld">
+                                        <input type="text" name="username" id="un">
+                                        <label for="un">User Name or Email</label>
+                                    </div>
+                                    
+                                    <div class="feeld">
+                                        <input type="text" name="password" id="pass">
+                                        <label for="pass">Password</label>
+                                    </div>
+                                    
+                                    <input type="submit" value="LOGIN" class="but">
+                                    
+                                    <div class="sing_up_a">
+                                        <a href="#" onclick="Register()">Don't have acount</a>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="pop_rigth">
+                            <img src="asedes/skynews-post-office-protest_6413847.png" class="first">
+                            <img src="asedes/skynews-serco-doncaster-prison_5914750.png" class="secand">
+                            <img src="asedes/‏‏لقطة الشاشة (90).png" class="thared">
+                            <img src="asedes/‏‏لقطة الشاشة (92).png" class="forth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="HOME" id="HOME">
                 <div class="hot">
                     <div class="title">Hot</div>
@@ -130,7 +211,7 @@
                 </div>
 
                 <div class="most_watched">
-                    <div class="title">most watched</div>
+                    <div class="title">Most Watched</div>
                     
                     <div class="sup_card">
                         <img src="asedes/img/Soprt/_132486489_stokes1.png" alt="">
@@ -697,6 +778,8 @@
                     </div>
                 </div>
             </div>
+
+            
         </main>
 
         <footer>
@@ -704,40 +787,40 @@
                 <div class="F_top">
                     <div class="f_News">
                         <ul>
-                            <li><a href="#" id="News">News</a></li>
-                            <li><a href="#" id="News">Live TV</a></li>
-                            <li><a href="#" id="News">GLOBE Films</a></li>
-                            <li><a href="#" id="News">HLM</a></li>
+                            <li><a href="#" onclick="News_active()">News</a></li>
+                            <li><a href="#" onclick="News_active()">Live TV</a></li>
+                            <li><a href="#" onclick="News_active()">GLOBE Films</a></li>
+                            <li><a href="#" onclick="News_active()">HLM</a></li>
                         </ul>
                     </div>
                     <div class="f_Politics">
                         <ul>
-                            <li><a href="#" id="Politics">Politics</a></li>
-                            <li><a href="#" id="Politics">Stal</a></li>
-                            <li><a href="#" id="Politics">News</a></li>
-                            <li><a href="#" id="Politics">Videos</a></li>
+                            <li><a href="#" onclick="Politics_active()">Politics</a></li>
+                            <li><a href="#" onclick="Politics_active()">Stal</a></li>
+                            <li><a href="#" onclick="Politics_active()">News</a></li>
+                            <li><a href="#" onclick="Politics_active()">Videos</a></li>
                         </ul>
                     </div>
                     <div class="f_Business">
                         <ul>
-                            <li><a href="#" id="Business">Business</a></li>
-                            <li><a href="#" id="Business">Food</a></li>
-                            <li><a href="#" id="Business">Drink</a></li>
+                            <li><a href="#" onclick="Business_active()">Business</a></li>
+                            <li><a href="#" onclick="Business_active()">Food</a></li>
+                            <li><a href="#" onclick="Business_active()">Drink</a></li>
                         </ul>
                     </div>
                     <div class="f_Sport">
                         <ul>
-                            <li><a href="#" id="Sport">Sport</a></li>
-                            <li><a href="#" id="Sport">football</a></li>
-                            <li><a href="#" id="Sport">Golf</a></li>
-                            <li><a href="#" id="Sport">olympics</a></li>
+                            <li><a href="#" onclick="Sport_active()">Sport</a></li>
+                            <li><a href="#" onclick="Sport_active()">football</a></li>
+                            <li><a href="#" onclick="Sport_active()">Golf</a></li>
+                            <li><a href="#" onclick="Sport_active()">olympics</a></li>
                         </ul>
                     </div>
                     <div class="f_Technology">
                         <ul>
-                            <li><a href="#" id="Technology">Technology</a></li>
-                            <li><a href="#" id="Technology">Digitial</a></li>
-                            <li><a href="#" id="Technology">studios</a></li>
+                            <li><a href="#" onclick="Technology_active()">Technology</a></li>
+                            <li><a href="#" onclick="Technology_active()">Digitial</a></li>
+                            <li><a href="#" onclick="Technology_active()">studios</a></li>
                         </ul>
                     </div>
                 </div>
