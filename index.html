@@ -14,8 +14,10 @@
             <div class="logo">
                 <img src="asedes/img/LOGO.png" alt="logo">
                 <div class="logotext">
-                    <span class="blue">GL</span>
-                    <span class="green">OB</span>
+                    <span class="blue">G</span>
+                    <span class="blue">L</span>
+                    <span class="green">O</span>
+                    <span class="green">B</span>
                     <span class="orange">E</span>
                 </div>
                 <div class="logoNews">News</div>
@@ -63,10 +65,49 @@
                             <img src="asedes/img/sarch.png" alt="sarch">
                         </div>
                         
-                        <li>
-                            <a href="#" id="LOGIN">LOGIN</a>
-                            <div class="nav_item_underline"></div>
-                        </li>
+                        <div id="nav_login">
+                            <li>
+                                <a href="#" id="LOGIN">LOGIN</a>
+                                <div class="nav_item_underline"></div>
+                            </li>
+                        </div>
+
+                        <div id="nav_logedin">
+                            <li>
+                                <a href="#" id="Acount" class="acount_img" onclick="Acount_active()">
+                                    <img src="asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
+                                </a>
+                                <div id="ACOUNT_POPUP">
+                                    <div class=" acount_bg_card">
+                                        <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                        <div class="card">
+                                            <div class="card_contant">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Edit profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Create plog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"  onclick="Acount_altrat()">Edit plog</a>
+                                                    </li>
+                                                    <div class="slpet"></div>
+                                                    <li>
+                                                        <a href="#" onclick="logout()" 
+                                                        onmouseenter="logout_icon('asedes/icons8-logout-100.png')" 
+                                                        onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                            Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </div>
 
                     </ul>
                 </div>
@@ -84,8 +125,10 @@
                         <div class="pop_left">
                             <div class="pop_SingUP" id="SingUP">
                                 <div class="logotext">
-                                    <span class="blue">GL</span>
-                                    <span class="green">OB</span>
+                                    <span class="blue">G</span>
+                                    <span class="blue">L</span>
+                                    <span class="green">O</span>
+                                    <span class="green">B</span>
                                     <span class="orange">E</span>
                                 </div>
                                 <div class="pop_titel">
@@ -113,13 +156,15 @@
                                         <label for="repass">Repassword</label>
                                     </div>
                                     
-                                    <input type="submit" value="Register" onclick="use_the_acount()" class="but">
+                                    <input type="button" value="Register" onclick="use_the_acount()" class="but">
                                 </form>
                             </div>
                             <div class="pop_SingUP" id="LogIN">
                                 <div class="logotext">
-                                    <span class="blue">GL</span>
-                                    <span class="green">OB</span>
+                                    <span class="blue">G</span>
+                                    <span class="blue">L</span>
+                                    <span class="green">O</span>
+                                    <span class="green">B</span>
                                     <span class="orange">E</span>
                                 </div>
                                 <div class="pop_titel">
@@ -137,7 +182,7 @@
                                         <label for="pass">Password</label>
                                     </div>
                                     
-                                    <input type="submit" value="LOGIN" class="but">
+                                    <input type="button" value="LOGIN" class="but" onclick="in_acount()">
                                     
                                     <div class="sing_up_a">
                                         <a href="#" onclick="Register()">Don't have acount</a>
@@ -779,6 +824,119 @@
                 </div>
             </div>
 
+            <div class="ACOUNT_EDIT" id="ACOUNT_EDIT">
+                <div class="main_contant">
+                    <div class="title">Your posts</div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                        <div class="edit">
+                            <a href="#">EDIT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </main>
 
@@ -826,7 +984,7 @@
                 </div>
                 
                 <div class="F_bottom">
-                    <div class="copy_rigth"><sup>&copy;</sup>2023 A.F.H.2M News projct</div>
+                    <div class="copy_rigth">&copy;2023 GLOBE News a student's projct</div>
                 </div>
                 
             </div>
@@ -838,8 +996,10 @@
                     </div>
                     <div class="text">
                         <div class="logotext">
-                            <span class="blue">GL</span>
-                            <span class="green">OB</span>
+                            <span class="blue">G</span>
+                            <span class="blue">L</span>
+                            <span class="green">O</span>
+                            <span class="green">B</span>
                             <span class="orange">E</span>
                         </div>
                         <div class="logoNews">News</div>

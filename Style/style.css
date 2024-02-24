@@ -30,6 +30,7 @@ img{
     display: block;
 }
 
+
 .bgimg img{
     width: 100%;
     height: var(--bging_height);
@@ -40,7 +41,7 @@ img{
     position: absolute;
     top: 0;
     width: 200px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .logo .logoimg{
@@ -83,7 +84,7 @@ img{
     left: 90px;
     color: var(--white);
     background-color: var(--bgnav);
-    padding: 2px 15px 10px 15px;
+    padding: 2px 20px 10px 20px;
 }
 
 .nav_bar{
@@ -126,20 +127,20 @@ img{
 .nav_item_underline{
     display: block;
     width: 0px;
-    height: 2px;
-    border: 2px solid  var(--bgnav);
+    height: 5px;
+    background-color: var(--bgnav);
     transition: .5s;
 }
 
 .nav_item a:hover ~ .nav_item_underline{
     width: 100%;
-    border: 2px solid var(--dake_orange);
+    background-color: var(--dake_orange);
     transition: .5s;
 }
 
 .nav_item a[active = true] ~ .nav_item_underline{
     width: 100%;
-    border: 2px solid var(--dake_orange);
+    background-color: var(--dake_orange);
 }
 
 .nav_item .sarch{
@@ -162,6 +163,78 @@ position: relative;
 .nav_item a[log_in = true]{
     display: none;
 }
+
+#nav_login{
+    display: block;
+}
+
+#nav_logedin, #ACOUNT_EDIT, #ACOUNT_POPUP{
+    display: none;
+}
+
+.acount_bg_card{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.acount_bg_card .card{
+    width: 150px;
+    height: 200px;
+    background-color: var(--footer);
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.card .card_contant{
+    position: relative;
+}
+
+.card_contant ul{
+    display: block;
+}
+
+.card_contant li, .card_contant li:last-child{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--white);
+}
+
+.card_contant li a:hover{
+    color: var(--ligth_footer);
+}
+
+.card_contant .slpet{
+    width: 80%;
+    height: 2px;
+    margin: 20px 12px;
+    background-color: var(--white);
+}
+
+.card_contant li a img{
+    width: 20px;
+    position: absolute;
+    right: 35px;
+    bottom: 1px;
+}
+
+.acount_img img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0d79ae ;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
 
 /* MAIN */
 main{
@@ -313,6 +386,7 @@ main .main_contant{
 }
 
 .main_contant .contant_card{
+    position: relative;
     display: flex;
     margin: 20px;
     margin-top: 60px;
@@ -329,6 +403,22 @@ main .main_contant{
     font-size: 28px;
     color: var(--footer);
 }
+
+.contant_card .edit{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    background-color: var(--blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.edit a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*PopUP*/
 
 main .popup{
     display: none;
@@ -423,7 +513,7 @@ main .popup{
     transition: .5s;
 }
 
-.pop_SingUP input[type = "submit"]{
+.pop_SingUP input[type = "button"]{
     cursor: pointer;
     background-color: var(--white);
     border: transparent;
@@ -437,7 +527,7 @@ main .popup{
     transition: 1s;
 }
 
-.pop_SingUP input[type = "submit"]:hover{
+.pop_SingUP input[type = "button"]:hover{
     background-color: var(--ligth_bgnav);
     transition: 1s;
 }
@@ -529,7 +619,12 @@ footer .F_top{
 footer .F_bottom{
     cursor: default;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    left: 10px;
+}
+
+.F_bottom .copy_rigth{
+    color: var(--white);
 }
 
 footer .F_rigth{
@@ -538,7 +633,7 @@ footer .F_rigth{
 
 .F_rigth .F_logo{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .F_logo img{
@@ -550,5 +645,5 @@ footer .F_rigth{
     cursor: default;
     color: var(--white);
     background-color: var(--bgnav);
-    padding: 2px 15px 10px 15px;
+    padding: 2px 20px 10px 20px;
 }

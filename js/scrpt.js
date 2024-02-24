@@ -1,3 +1,31 @@
+//nav items
+
+var Home_el = document.getElementById("Home");
+
+var News_el = document.getElementById("News");
+
+var Politics_el = document.getElementById("Politics");
+
+var Business_el = document.getElementById("Business");
+
+var Sport_el = document.getElementById("Sport");
+
+var Technology_el = document.getElementById("Technology");
+
+var not_loged = document.getElementById("nav_login");
+
+var loged = document.getElementById("nav_logedin");
+
+//acount
+
+var Acount_el = document.getElementById("acount");
+
+var acount_popup_el = document.getElementById("ACOUNT_POPUP");
+
+var logoicon_el = document.getElementById("logoicon");
+
+//main contaners
+
 var home_el = document.getElementById("HOME");
 
 var news_el = document.getElementById("NEWS");
@@ -12,17 +40,9 @@ var technology_el = document.getElementById("TECHNOLOGY");
 
 var log_in_el = document.getElementById("LOGIN");
 
-var Home_el = document.getElementById("Home");
+var acount_el = document.getElementById("ACOUNT_EDIT");
 
-var News_el = document.getElementById("News");
-
-var Politics_el = document.getElementById("Politics");
-
-var Business_el = document.getElementById("Business");
-
-var Sport_el = document.getElementById("Sport");
-
-var Technology_el = document.getElementById("Technology");
+//popup sing up & login 
 
 var popup_el = document.getElementById("popup");
 
@@ -37,6 +57,7 @@ function Home_active(){
     business_el.style.display = "none";
     sport_el.style.display = "none";
     technology_el.style.display = "none";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "true");
@@ -54,6 +75,7 @@ function News_active(){
     business_el.style.display = "none";
     sport_el.style.display = "none";
     technology_el.style.display = "none";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "false");
@@ -71,6 +93,7 @@ function Politics_active(){
     business_el.style.display = "none";
     sport_el.style.display = "none";
     technology_el.style.display = "none";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "false");
@@ -88,6 +111,7 @@ function Business_active(){
     business_el.style.display = "block";
     sport_el.style.display = "none";
     technology_el.style.display = "none";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "false");
@@ -105,6 +129,7 @@ function Sport_active(){
     business_el.style.display = "none";
     sport_el.style.display = "block";
     technology_el.style.display = "none";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "false");
@@ -122,6 +147,7 @@ function Technology_active(){
     business_el.style.display = "none";
     sport_el.style.display = "none";
     technology_el.style.display = "block";
+    acount_el.style.display = "none";
 
 
     Home_el.setAttribute("active", "false");
@@ -132,8 +158,36 @@ function Technology_active(){
     Technology_el.setAttribute("active", "true");
 };
 
+function Acount_altrat(){
+    Close_acount_popup()
+
+    home_el.style.display = "none";
+    news_el.style.display = "none";
+    politics_el.style.display = "none";
+    business_el.style.display = "none";
+    sport_el.style.display = "none";
+    technology_el.style.display = "none";
+    acount_el.style.display = "block";
+
+
+    Home_el.setAttribute("active", "false");
+    News_el.setAttribute("active", "false");
+    Politics_el.setAttribute("active", "false");
+    Business_el.setAttribute("active", "false");
+    Sport_el.setAttribute("active", "false");
+    Technology_el.setAttribute("active", "false");
+};
+
+function Acount_active(){
+    acount_popup_el.style.display = "block";
+};
+
 function Close_popup(){
     popup_el.style.display = "none";
+};
+
+function Close_acount_popup(){
+    acount_popup_el.style.display = "none";
 };
 
 log_in_el.addEventListener("click",function(){
@@ -148,4 +202,21 @@ function Register(){
 function use_the_acount(){
     SINGUP_el.style.display = "none";
     LogIN_el.style.display = "block";
+}
+
+function in_acount(){
+    loged.style.display = "block";
+    not_loged.style.display = "none";
+    Close_popup()
+}
+
+function logout(){
+    loged.style.display = "none";
+    not_loged.style.display = "block";
+    Close_acount_popup()
+    Home_active()
+}
+
+function logout_icon(src){
+    logoicon_el.src = src
 }
