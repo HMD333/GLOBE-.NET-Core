@@ -41,7 +41,7 @@
                         </li>
 
                         <li>
-                            <a href="#" active = false id="Business" onclick="Business_active()">Business</a>
+                            <a href="#" active = false id="Health" onclick="Health_active()">Health</a>
                             <div class="nav_item_underline"></div>
                         </li>
 
@@ -55,14 +55,9 @@
                             <div class="nav_item_underline"></div>
                         </li>
 
-                        <li>
-                            <a href="#" active = false id="About_as">About as</a>
-                            <div class="nav_item_underline"></div>
-                        </li>
-
                         <div class="sarch">
                             <input type="text" class="sharth" name="sarch">
-                            <img src="asedes/img/sarch.png" alt="sarch">
+                            <img onclick="Sarch()" src="asedes/img/sarch.png">
                         </div>
                         
                         <div id="nav_login">
@@ -74,25 +69,95 @@
 
                         <div id="nav_logedin">
                             <li>
-                                <a href="#" id="Acount" class="acount_img" onclick="Acount_active()">
+                                <a href="#" id="Acount" class="acount_img" onclick="Au_Acount_active()">
+                                    <p>User Name</p>
                                     <img src="asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
                                 </a>
-                                <div id="ACOUNT_POPUP">
+                                <div id="ADMEN_ACOUNT_POPUP">
                                     <div class=" acount_bg_card">
                                         <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
-                                        <div class="card">
+                                        <div class="card" account_type = "Admen">
                                             <div class="card_contant">
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Edit profile</a>
+                                                        <a href="#" onclick="Create_Accont()">Create Account</a>
                                                     </li>
+                                                    
                                                     <li>
-                                                        <a href="#">Create plog</a>
+                                                        <a href="#" onclick="Create_Contant()">Create plog</a>
                                                     </li>
+
                                                     <li>
-                                                        <a href="#"  onclick="Acount_altrat()">Edit plog</a>
+                                                        <a href="#"  onclick="Your_Contant()">View plog</a>
                                                     </li>
+
                                                     <div class="slpet"></div>
+                                                    
+                                                    <li>
+                                                        <a href="#" onclick="logout()" 
+                                                        onmouseenter="logout_icon('asedes/icons8-logout-100.png')" 
+                                                        onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                            Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="USER_ACOUNT_POPUP">
+                                    <div class=" acount_bg_card">
+                                        <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                        <div class="card"  account_type = "User">
+                                            <div class="card_contant">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"onclick="Acount_altrat()">profile</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#"  onclick="Favuret()">Favorite</a>
+                                                    </li>
+                                                    
+                                                    <div class="slpet"></div>
+                                                    <li>
+                                                        <a href="#" onclick="logout()" 
+                                                        onmouseenter="logout_icon('asedes/icons8-logout-100.png')" 
+                                                        onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                            Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="AUTHER_ACOUNT_POPUP">
+                                    <div class=" acount_bg_card">
+                                        <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                        <div class="card" account_type = "Auther">
+                                            <div class="card_contant">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" onclick="Acount_altrat()">profile</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#" onclick="Create_Contant()">Create plog</a>
+                                                    </li>
+                                                    
+                                                    <li>
+                                                        <a href="#"  onclick="Your_Contant()">View plog</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#"  onclick="Favuret()">Favorite</a>
+                                                    </li>
+
+                                                    <div class="slpet"></div>
+
                                                     <li>
                                                         <a href="#" onclick="logout()" 
                                                         onmouseenter="logout_icon('asedes/icons8-logout-100.png')" 
@@ -131,29 +196,42 @@
                                     <span class="green">B</span>
                                     <span class="orange">E</span>
                                 </div>
-                                <div class="pop_titel">
-                                    Register with the GLOBE
-                                </div>
 
                                 <form>
+                                    <div class="feeld_name">
+                                        <div class="name_items">
+                                            <div class="feeld">
+                                                <input type="text" name="fname" id="sfn">
+                                                <label for="sfn">First Name</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="name_items">
+                                            <div class="feeld">
+                                                <input type="text" name="lname" id="sln">
+                                                <label for="sln">Last Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
                                     <div class="feeld">
-                                        <input type="text" name="username" id="un">
-                                        <label for="un">User Name</label>
+                                        <input type="text" name="username" id="sun">
+                                        <label for="sun">User Name</label>
                                     </div>
                                     
                                     <div class="feeld">
-                                        <input type="text" name="email" id="e">
-                                        <label for="e">Email</label>
+                                        <input type="text" name="email" id="se">
+                                        <label for="se">Email</label>
                                     </div>
                                     
                                     <div class="feeld">
-                                        <input type="text" name="password" id="pass">
-                                        <label for="pass">Password</label>
+                                        <input type="text" name="password" id="spass">
+                                        <label for="spass">Password</label>
                                     </div>
                                     
                                     <div class="feeld">
-                                        <input type="text" name="repassword" id="repass">
-                                        <label for="repass">Repassword</label>
+                                        <input type="text" name="repassword" id="srepass">
+                                        <label for="srepass">Repassword</label>
                                     </div>
                                     
                                     <input type="button" value="Register" onclick="use_the_acount()" class="but">
@@ -173,13 +251,13 @@
 
                                 <form>
                                     <div class="feeld">
-                                        <input type="text" name="username" id="un">
-                                        <label for="un">User Name or Email</label>
+                                        <input type="text" name="username" id="lun">
+                                        <label for="lun">User Name or Email</label>
                                     </div>
                                     
                                     <div class="feeld">
-                                        <input type="text" name="password" id="pass">
-                                        <label for="pass">Password</label>
+                                        <input type="text" name="password" id="lpass">
+                                        <label for="lpass">Password</label>
                                     </div>
                                     
                                     <input type="button" value="LOGIN" class="but" onclick="in_acount()">
@@ -207,7 +285,7 @@
 
                     <div class="main_card">
                         <img src="asedes/img/News/‏‏لقطة الشاشة (58).png" alt="">
-                        <div class="ops"></div>
+                        <div class="ops" onclick="Post()"></div>
                         <div class="text">
                             <p>Houthis attack British-linked tanker
                                 Marlin Luanda in Gulf of Aden
@@ -222,7 +300,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/‏‏لقطة الشاشة (63).png" alt="">
+                        <img src="asedes/img/News/‏‏لقطة الشاشة (63).png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Icon of the Seas: World's largest
@@ -238,7 +316,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/_132486489_stokes1.png" alt="">
+                        <img src="asedes/img/Soprt/_132486489_stokes1.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 India v England: Hyderabad Heis
@@ -259,16 +337,17 @@
                     <div class="title">Most Watched</div>
                     
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/_132486489_stokes1.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/Soprt/_132486489_stokes1.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 India v England: Hyderabad Heist shows England.
                             </p>
                         </div>
+                        
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/skynews-chris-heaton-harris_6437929.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/skynews-chris-heaton-harris_6437929.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 All conditions now in place to restore power-sharing.
@@ -277,7 +356,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -286,7 +365,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/skynews-jordan-united-states_6436207.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/skynews-jordan-united-states_6436207.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Three US troops killed and 34 shows England are unmissable injured in drone attack in Jordan
@@ -300,7 +379,7 @@
                     <div class="title">News</div>
                     
                     <div class="sup_card">
-                        <img src="asedes/img/News/skynews-the-hague-court_6434004.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/skynews-the-hague-court_6434004.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Judges at the International 
@@ -310,7 +389,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/‏‏لقطة الشاشة (58).png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/‏‏لقطة الشاشة (58).png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Houthis attack British-linked tanker
@@ -320,7 +399,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/‏‏لقطة الشاشة (63).png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/‏‏لقطة الشاشة (63).png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Icon of the Seas: World's largest shows England are unmissable
@@ -331,7 +410,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/News/‏‏لقطة الشاشة (75).png" alt="">
+                        <img class="mane_post_img" src="asedes/img/News/‏‏لقطة الشاشة (75).png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Key UN Gaza aid agency UNRWA shows England are unmissable
@@ -346,7 +425,7 @@
                     <div class="title">Sport</div>
                     
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/_132487331_emilionsuereactsaftermissedpenequatorialguineavsguinea.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/Soprt/_132487331_emilionsuereactsaftermissedpenequatorialguineavsguinea.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 quarter-finals of the Africa 
@@ -357,7 +436,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/_132486489_stokes1.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/Soprt/_132486489_stokes1.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 India v England: 'Hyderabad
@@ -367,7 +446,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/_132498011_gettyimages-1970907663.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/Soprt/_132498011_gettyimages-1970907663.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Blackburn Rovers recovered
@@ -377,7 +456,7 @@
                     </div>
 
                     <div class="sup_card">
-                        <img src="asedes/img/Soprt/9188366_1705959964.png" alt="">
+                        <img class="mane_post_img" src="asedes/img/Soprt/9188366_1705959964.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 Premier League: Brightonn
@@ -394,7 +473,7 @@
                     <div class="title">News</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -403,7 +482,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -412,7 +491,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -421,7 +500,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -430,7 +509,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -439,7 +518,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -448,7 +527,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -457,7 +536,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -466,7 +545,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -481,7 +560,7 @@
                     <div class="title">Politics</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -490,7 +569,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -499,7 +578,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -508,7 +587,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -517,7 +596,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -526,7 +605,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -535,7 +614,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -544,7 +623,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -553,7 +632,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -563,12 +642,12 @@
                 </div>
             </div>
 
-            <div class="BUSINESS" id="BUSINESS">
+            <div class="HEALTH" id="HEALTH">
                 <div class="main_contant">
-                    <div class="title">Business</div>
+                    <div class="title">Health</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -577,7 +656,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -586,7 +665,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -595,7 +674,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -604,7 +683,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -613,7 +692,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -622,7 +701,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -631,7 +710,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -640,7 +719,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -655,7 +734,7 @@
                     <div class="title">Sport</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -664,7 +743,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -673,7 +752,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -682,7 +761,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -691,7 +770,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -700,7 +779,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -709,7 +788,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -718,7 +797,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -727,7 +806,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -742,7 +821,7 @@
                     <div class="title">Technology</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -751,7 +830,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -760,7 +839,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -769,7 +848,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -778,7 +857,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -787,7 +866,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -796,7 +875,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -805,7 +884,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -814,7 +893,7 @@
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
@@ -824,116 +903,447 @@
                 </div>
             </div>
 
-            <div class="ACOUNT_EDIT" id="ACOUNT_EDIT">
+            <div class="SARCH" id="SARCH">
+                <div class="main_contant">
+                    <div class="title">Sarch</div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contant_card">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
+                        <div class="text">
+                            <p>
+                                vows to punish staff involved shows England are unmissable in Hamas attack
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="CREATE_CONTANT" id="CREATE_CONTANT">
+                <div class="main_contant">
+                    <div class="title">Create Plog</div>
+                    <form class="Form">
+                        <div class="AE_F_Text">
+                            <label>Title</label>
+                            <input type="text" name="title" placeholder="Enter Title">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Sub Title</label>
+                            <input type="text" name="stitle" placeholder="Enter Sub Title">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label for="img" onclick="change_img()">Iamges <img src="asedes/Picture2.png"></label>
+                            
+                            <input type="file" name="img" id="img" hidden>
+                            <div class="img_ph"></div>
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>The NEWS</label>
+                            <input type="text" name="the-news">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Type</label>
+                            
+                            
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <input type="button" name="title" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="YOUR_CONTANT" id="YOUR_CONTANT">
                 <div class="main_contant">
                     <div class="title">Your posts</div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
                         </div>
                     </div>
 
                     <div class="contant_card">
-                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" alt="">
+                        <img src="asedes/img/News/skynews-israel-gaza-rafah_6434705.png" onclick="Post()">
                         <div class="text">
                             <p>
                                 vows to punish staff involved shows England are unmissable in Hamas attack
                             </p>
                         </div>
                         <div class="edit">
-                            <a href="#">EDIT</a>
+                            <a href="#" onclick="Create_Contant()">EDIT</a>
                         </div>
+                        <div class="delete">
+                            <a href="#">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="CREATE_ACCOUNT" id="CREATE_ACCOUNT">
+                <div class="main_contant">
+                    <div class="title">Create Account</div>
+                    <form class="Form">
+                        <div class="AE_F_Text">
+                            <label>First Name</label>
+                            <input type="text" name="fname" placeholder="Enter First Name">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Last Name</label>
+                            <input type="text" name="lname" placeholder="Enter Last Name">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>User Name</label>
+                            <input type="text" name="uname" placeholder="Enter User Name">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter Email">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Password</label>
+                            <input type="Password" name="email" placeholder="Enter Password">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <label>Repassword</label>
+                            <input type="Password" name="email" placeholder="Re Enter password">
+                        </div>
+
+                        <div class="AE_F_Text">
+                            <input type="button" name="title" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="EDIT_ACCONTE" id="EDIT_ACCONTE">
+                <div class="main_contant">
+                    <div class="title">Edit Account</div>
+                    <form class="Form">
+                    <div class="AE_F_Text">
+                        <label>First Name</label>
+                        <input type="text" name="fname" placeholder="Change First Name">
+                    </div>
+
+                    <div class="AE_F_Text">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" placeholder="Change Last Name">
+                    </div>
+
+                    <div class="AE_F_Text">
+                        <input type="button" name="title" value="submit">
+                    </div>
+                </form>
+                    
+                </div>
+            </div>
+
+            <div class="FAVURET" id="FAVURET">
+                <div class="main_contant">
+                    <div class="title">Favorite</div>
+                        <form class="Fav">
+                            <div class="fav_con">
+                                <label class="fav_sup_con" active = false id="fav_Card_sp" for="Spore_RB">
+                                    <div class="fav_Card">
+                                        <div class="fav_top">
+                                            Spore
+                                        </div>
+                                        <input type="radio" name="fav_Card_rb" value="Spore" id="Spore_RB" hidden>
+                                        <div class="fav_bot">
+                                            <p>It will show news about:</p>
+                                            <ul>
+                                                <li>foorbole</li>
+                                                <li>tanes</li>
+                                                <li>recby</li>
+                                                <li>bascet</li>
+                                            </ul>
+                                        </div>
+                                        <img src="asedes/img/Picture1.jpg" class="Fav_ing">
+                                    </div>
+                                </label>
+
+                                <label class="fav_sup_con" active = false id="fav_Card_po" for="Politics_RB">
+                                    <div class="fav_Card">
+                                        <div class="fav_top">
+                                            Politics
+                                        </div>
+                                        <input type="radio" name="fav_Card_rb" value="Politics" id="Politics_RB" hidden>
+                                        <div class="fav_bot">
+                                            <p>It will show news about:</p>
+                                            <ul>
+                                                <li>foorbole</li>
+                                                <li>tanes</li>
+                                                <li>recby</li>
+                                                <li>bascet</li>
+                                            </ul>
+                                        </div>
+                                        <img src="asedes/img/Picture2.jpg" class="Fav_ing">
+                                    </div>
+                                </label>
+                                
+                                <label class="fav_sup_con" active = false id="fav_Card_he" for="Health_RB">
+                                    <div class="fav_Card">
+                                        <div class="fav_top">
+                                            Health
+                                        </div>
+                                        <input type="radio" name="fav_Card_rb" value="Health" id="Health_RB" hidden>
+                                        <div class="fav_bot">
+                                            <p>It will show news about:</p>
+                                            <ul>
+                                                <li>foorbole</li>
+                                                <li>tanes</li>
+                                                <li>recby</li>
+                                                <li>bascet</li>
+                                            </ul>
+                                        </div>
+                                        <img src="asedes/img/Picture3.jpg" class="Fav_ing">
+                                    </div>
+                                </label>
+                                
+                                <label class="fav_sup_con" active = false id="fav_Card_te" for="Technology_RB">
+                                    <div class="fav_Card">
+                                        <div class="fav_top">
+                                            Technology
+                                        </div>
+                                        <input type="radio" name="fav_Card_rb" value="Technology" id="Technology_RB" hidden>
+                                        <div class="fav_bot">
+                                            <p>It will show news about:</p>
+                                            <ul>
+                                                <li>foorbole</li>
+                                                <li>tanes</li>
+                                                <li>recby</li>
+                                                <li>bascet</li>
+                                            </ul>
+                                        </div>
+                                        <img src="asedes/img/Picture4.jpg" class="Fav_ing">
+                                    </div>
+                                </label>
+                            </div>
+                            <input type="button" name="title" value="submit">
+                        </form>
+                    </div>
+            </div>
+
+            <div class="POST" id="POST">
+                <div class="main_contant">
+                    <div class="title">Bitcoin value hits new all-time high</div>
+                    <div class="POsubtitle">
+                        <p>In common with many other investments, the cryptocurrency had suffered a
+                            massive fall as the pandemic receded in 2022. But just as the fall was sharp, the
+                            recent rise is steep, as stock markets overall have grown amid optimism over
+                            declining inflation and expected interest rate drops.</p>
+                    </div>
+
+                    <img class="POimg" src="asedes/img/Soprt/_132486489_stokes1.png">
+
+                    <div class="POtext">
+                        <p>The value of the best-known cryptocurrency, Bitcoin, has reached a new high.
+                            For the first time ever one Bitcoin bought $69,202 (£54,404) on Tuesday afternoon, surpassing
+                            the previous high just below $69,000 (£54,242) recorded in November 2021.
+                            It comes, as the previous high did, as a 'halving' event approaches, whereby Bitcoin production
+                            is cut by 50%.
+                            A recent boost for the digital asset also came in January as a new product was launched that
+                            allows people to track the value of Bitcoin without owning it, something known as an exchange-
+                            traded fund (ETF).
+                            Bitcoin values dropped slightly as the afternoon wore on, with $66,447.16 (£52,240) being
+                            equal to one Bitcoin.
+                            The next halving occurs on 19 April. Roughly 900 new Bitcoins are created every day, but this is
+                            to be cut to 450.</p>
                     </div>
                 </div>
             </div>
@@ -959,11 +1369,11 @@
                             <li><a href="#" onclick="Politics_active()">Videos</a></li>
                         </ul>
                     </div>
-                    <div class="f_Business">
+                    <div class="f_Health">
                         <ul>
-                            <li><a href="#" onclick="Business_active()">Business</a></li>
-                            <li><a href="#" onclick="Business_active()">Food</a></li>
-                            <li><a href="#" onclick="Business_active()">Drink</a></li>
+                            <li><a href="#" onclick="Health_active()">Health</a></li>
+                            <li><a href="#" onclick="Health_active()">Food</a></li>
+                            <li><a href="#" onclick="Health_active()">Drink</a></li>
                         </ul>
                     </div>
                     <div class="f_Sport">
