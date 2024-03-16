@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
-namespace Globe.Models
+namespace Globe.Data
 {
     public class News
     {

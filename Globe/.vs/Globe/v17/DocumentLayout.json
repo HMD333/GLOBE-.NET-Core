@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hatem\\Desktop\\Globe\\",
+  "WorkspaceRootPath": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Migrations\\20240313230024_Globe_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Globe\\Migrations\\20240313230024_Globe_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\itpg3baqshmer\\globe\\globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\globe\\globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\itpg3baqshmer\\globe\\globe\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\itpg3baqshmer\\globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\hatem\\desktop\\itpg3baqshmer\\globe\\globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240313230024_Globe_1.cs",
-              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Migrations\\20240313230024_Globe_1.cs",
-              "RelativeDocumentMoniker": "Globe\\Migrations\\20240313230024_Globe_1.cs",
-              "ToolTip": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Migrations\\20240313230024_Globe_1.cs",
-              "RelativeToolTip": "Globe\\Migrations\\20240313230024_Globe_1.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAADYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T23:00:24.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "Globe\\Data\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
-              "RelativeToolTip": "Globe\\Data\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T22:48:45.486Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -57,6 +43,70 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Globe\\Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Globe\\Data\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:34:52.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Globe\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Globe\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAFYBAAAAAAAAAAAAAGYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-16T11:00:39.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOICAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T12:31:04.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Globe\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Globe\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAM8DAAAAAAAAAAAAALkDAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-15T12:21:55.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T12:09:42.437Z"
             }
           ]
         }

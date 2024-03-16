@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Globe.Models
+namespace Globe.Data
 {
     public class User
     {
@@ -12,7 +12,7 @@ namespace Globe.Models
         public string? Last_Name { get; set; }
         [Required]
         public string? Usar_Name { get; set; }
-        public sbyte? Faverat { get; set;}
+        public sbyte? Faverat { get; set; }
         [Required]
         [PasswordPropertyText]
         public string? password { get; set; }

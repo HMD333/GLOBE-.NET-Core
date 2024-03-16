@@ -1,4 +1,4 @@
-﻿using Globe.Models;
+﻿using Globe.Models_DB;
 using Microsoft.EntityFrameworkCore;
 
 namespace Globe.Data

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Globe.Models
+namespace Globe.Data
 {
     public class Politlcs
     {

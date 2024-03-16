@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Globe.Models
+namespace Globe.Models_DB
 {
     public class Admin
     {
@@ -13,6 +13,6 @@ namespace Globe.Models
         public string? Password { get; set; }
         [Required]
         [EmailAddress]
-        public string? Email { get; set;}
+        public string? Email { get; set; }
     }
 }

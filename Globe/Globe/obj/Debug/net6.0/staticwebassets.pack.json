@@ -1,247 +1,367 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Globe.bundle.scp.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Globe.bundle.scp.css",
       "PackagePath": "staticwebassets\\Globe.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\Font\\RobotoCondensed-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\Font\\RobotoCondensed-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture1.png",
+      "PackagePath": "staticwebassets\\asedes\\Picture1.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture2.png",
+      "PackagePath": "staticwebassets\\asedes\\Picture2.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\icons8-logout-100.png",
+      "PackagePath": "staticwebassets\\asedes\\icons8-logout-100.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\568140.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\568140.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\BGIMG.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\BGIMG.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\LOGO.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO_F.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\LOGO_F.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\skynews-chris-heaton-harris_6437929.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\skynews-chris-heaton-harris_6437929.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\skynews-israel-gaza-rafah_6434705.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\skynews-israel-gaza-rafah_6434705.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\skynews-jordan-united-states_6436207.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\skynews-jordan-united-states_6436207.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\skynews-the-hague-court_6434004.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\skynews-the-hague-court_6434004.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\‏‏لقطة الشاشة (58).png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\‏‏لقطة الشاشة (58).png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\‏‏لقطة الشاشة (63).png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\‏‏لقطة الشاشة (63).png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\News\\‏‏لقطة الشاشة (75).png",
+      "PackagePath": "staticwebassets\\asedes\\img\\News\\‏‏لقطة الشاشة (75).png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture1.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Picture1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture2.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Picture2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture3.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Picture3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture4.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Picture4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\9188366_1705959964.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\9188366_1705959964.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\_132486489_stokes1.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\_132486489_stokes1.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\_132487331_emilionsuereactsaftermissedpenequatorialguineavsguinea.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\_132487331_emilionsuereactsaftermissedpenequatorialguineavsguinea.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\_132498011_gettyimages-1970907663.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\_132498011_gettyimages-1970907663.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\skysports-mikel-arteta-arsenal_6436449.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\skysports-mikel-arteta-arsenal_6436449.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\sarch.png",
+      "PackagePath": "staticwebassets\\asedes\\img\\sarch.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png",
+      "PackagePath": "staticwebassets\\asedes\\png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-post-office-protest_6413847.png",
+      "PackagePath": "staticwebassets\\asedes\\skynews-post-office-protest_6413847.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-serco-doncaster-prison_5914750.png",
+      "PackagePath": "staticwebassets\\asedes\\skynews-serco-doncaster-prison_5914750.png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (90).png",
+      "PackagePath": "staticwebassets\\asedes\\‏‏لقطة الشاشة (90).png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (92).png",
+      "PackagePath": "staticwebassets\\asedes\\‏‏لقطة الشاشة (92).png"
+    },
+    {
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

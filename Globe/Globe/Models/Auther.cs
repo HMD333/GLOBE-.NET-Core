@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Globe.Models
+namespace Globe.Data
 {
     public class Auther
     {
@@ -19,6 +19,6 @@ namespace Globe.Models
         [Required]
         [EmailAddress]
         public string? Email { get; set; }
-        
+
     }
 }

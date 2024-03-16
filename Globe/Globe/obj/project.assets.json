@@ -2020,11 +2020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Globe.csproj",
+      "projectUniqueName": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
       "projectName": "Globe",
-      "projectPath": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\Globe.csproj",
+      "projectPath": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
       "packagesPath": "C:\\Users\\Hatem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hatem\\Desktop\\Globe\\Globe\\obj\\",
+      "outputPath": "C:\\Users\\Hatem\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2102,7 +2102,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

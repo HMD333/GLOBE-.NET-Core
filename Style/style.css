@@ -798,11 +798,12 @@ main .popup{
         transform: translateY(-20px);
         transition: 1.5s;
     }
-    
-    &[active = "true"] .fav_Card> .fav_bot{
-        margin: 0;
+
+    &[active = "true"] > .fav_Card{
+        transform: translateY(-20px);
         transition: 1.5s;
     }
+    
 
     &:hover .fav_Card> .fav_top{
         padding-top: 20px;
@@ -815,18 +816,29 @@ main .popup{
     }
 
     &:hover .fav_Card> .fav_bot{
-        margin: 0;
+        margin: 50px 0 ;
         transition: 1.5s;
     }
 
-    &[active = "true"] > .fav_Card{
-        transform: translateY(-20px);
+    &[active = "true"] .fav_Card> .fav_bot{
+        margin: 50px 0 ;
+        transition: 1.5s;
+    }
+
+    
+
+    &:hover .fav_Card> .Fav_ing{
+        opacity: .7;
+        transition: 1.5s;
+    }
+
+    &[active = "true"] .fav_Card> .Fav_ing{
+        opacity: .7;
         transition: 1.5s;
     }
 }
 
 .fav_Card{
-    
     position: relative;
     margin: 50px 15px;
     height: 300px;
@@ -850,9 +862,9 @@ main .popup{
     text-align: start;
     font-size: 20px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 20px 10px;
-    height: 240px;
+    height: 280px;
     border-radius: 0 0 20px 20px;
     transition: 1.5s;
     flex-wrap: wrap;
@@ -882,6 +894,8 @@ main .popup{
     height: 100%;
     top: 0;
     z-index: -1;
+    opacity: .2;
+    transition: 1.5s;
 }
 
 .fav_bot ul{

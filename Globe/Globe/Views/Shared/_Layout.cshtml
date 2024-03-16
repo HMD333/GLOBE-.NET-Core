@@ -4,42 +4,253 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Globe</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Globe.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Globe</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+        <div class="bgimg">
+            <img src="asedes/img/BGIMG.png" alt="bake grawind img">
+        </div>
+        <div class="logo">
+            <img src="asedes/img/LOGO.png" alt="logo">
+            <div class="logotext">
+                <span class="blue">G</span>
+                <span class="blue">L</span>
+                <span class="green">O</span>
+                <span class="green">B</span>
+                <span class="orange">E</span>
+            </div>
+            <div class="logoNews">News</div>
+        </div>
+        <nav class="nav_bar">
+            <div class="nav_item">
+                <ul>
+                    <li>
+                        <a href="#" active=true id="Home" onclick="Home_active()">Home</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <li>
+                        <a href="#" active=false id="News" onclick="News_active()">News</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <li>
+                        <a href="#" active=false id="Politics" onclick="Politics_active()">Politics</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <li>
+                        <a href="#" active=false id="Health" onclick="Health_active()">Health</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <li>
+                        <a href="#" active=false id="Sport" onclick="Sport_active()">Sport</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <li>
+                        <a href="#" active=false id="Technology" onclick="Technology_active()">Technology</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+
+                    <div class="sarch">
+                        <input type="text" class="sharth" name="sarch">
+                        <img onclick="Sarch()" src="asedes/img/sarch.png">
+                    </div>
+
+                    <div id="nav_login">
+                    <li>
+                        <a href="#" id="LOGIN">LOGIN</a>
+                        <div class="nav_item_underline"></div>
+                    </li>
+            </div>
+
+            <div id="nav_logedin">
+                <li>
+                    <a href="#" id="Acount" class="acount_img" onclick="Au_Acount_active()">
+                        <p>User Name</p>
+                        <img src="asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
+                    </a>
+                    <div id="ADMEN_ACOUNT_POPUP">
+                        <div class=" acount_bg_card">
+                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                            <div class="card" account_type="Admen">
+                                <div class="card_contant">
+                                    <ul>
+                                        <li>
+                                            <a href="#" onclick="Create_Accont()">Create Account</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Create_Contant()">Create plog</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Your_Contant()">View plog</a>
+                                        </li>
+
+                                        <div class="slpet"></div>
+
+                                        <li>
+                                            <a href="#" onclick="logout()"
+                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="USER_ACOUNT_POPUP">
+                        <div class=" acount_bg_card">
+                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                            <div class="card" account_type="User">
+                                <div class="card_contant">
+                                    <ul>
+                                        <li>
+                                            <a href="#" onclick="Acount_altrat()">profile</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Favuret()">Favorite</a>
+                                        </li>
+
+                                        <div class="slpet"></div>
+                                        <li>
+                                            <a href="#" onclick="logout()"
+                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="AUTHER_ACOUNT_POPUP">
+                        <div class=" acount_bg_card">
+                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                            <div class="card" account_type="Auther">
+                                <div class="card_contant">
+                                    <ul>
+                                        <li>
+                                            <a href="#" onclick="Acount_altrat()">profile</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Create_Contant()">Create plog</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Your_Contant()">View plog</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" onclick="Favuret()">Favorite</a>
+                                        </li>
+
+                                        <div class="slpet"></div>
+
+                                        <li>
+                                            <a href="#" onclick="logout()"
+                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </div>
+
+            </ul>
+            </div>
+        </nav>
+
+    </header>
+        <main >
+            @RenderBody()
+        </main>
+
+    <footer>
+        <div class="F_left">
+            <div class="F_top">
+                <div class="f_News">
+                    <ul>
+                        <li><a href="#" onclick="News_active()">News</a></li>
+                        <li><a href="#" onclick="News_active()">Live TV</a></li>
+                        <li><a href="#" onclick="News_active()">GLOBE Films</a></li>
+                        <li><a href="#" onclick="News_active()">HLM</a></li>
+                    </ul>
+                </div>
+                <div class="f_Politics">
+                    <ul>
+                        <li><a href="#" onclick="Politics_active()">Politics</a></li>
+                        <li><a href="#" onclick="Politics_active()">Stal</a></li>
+                        <li><a href="#" onclick="Politics_active()">News</a></li>
+                        <li><a href="#" onclick="Politics_active()">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="f_Health">
+                    <ul>
+                        <li><a href="#" onclick="Health_active()">Health</a></li>
+                        <li><a href="#" onclick="Health_active()">Food</a></li>
+                        <li><a href="#" onclick="Health_active()">Drink</a></li>
+                    </ul>
+                </div>
+                <div class="f_Sport">
+                    <ul>
+                        <li><a href="#" onclick="Sport_active()">Sport</a></li>
+                        <li><a href="#" onclick="Sport_active()">football</a></li>
+                        <li><a href="#" onclick="Sport_active()">Golf</a></li>
+                        <li><a href="#" onclick="Sport_active()">olympics</a></li>
+                    </ul>
+                </div>
+                <div class="f_Technology">
+                    <ul>
+                        <li><a href="#" onclick="Technology_active()">Technology</a></li>
+                        <li><a href="#" onclick="Technology_active()">Digitial</a></li>
+                        <li><a href="#" onclick="Technology_active()">studios</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Globe - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="F_bottom">
+                <div class="copy_rigth">&copy;2023 GLOBE News a student's projct</div>
+            </div>
+
         </div>
+
+        <div class="F_rigth">
+            <div class="F_logo">
+                <div class="logoimg">
+                    <img src="asedes/img/LOGO_F.png" alt="logo">
+                </div>
+                <div class="text">
+                    <div class="logotext">
+                        <span class="blue">G</span>
+                        <span class="blue">L</span>
+                        <span class="green">O</span>
+                        <span class="green">B</span>
+                        <span class="orange">E</span>
+                    </div>
+                    <div class="logoNews">News</div>
+                </div>
+
+            </div>
+        </div>
+
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
