@@ -18,12 +18,56 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hatem\Desktop\ITPG3Baqshmer\Globe\Globe
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVfQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Plog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVfUGxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Dashbord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Edit_Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0X0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Favorite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Health.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWFsdGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Politics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2xpdGljcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Sarch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Sport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Technology.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWNobm9sb2d5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Hatem/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Shared/Error.cshtml]

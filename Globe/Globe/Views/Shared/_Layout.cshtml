@@ -6,13 +6,15 @@
     <title>@ViewData["Title"] - Globe</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
+
 <body>
+    
     <header>
         <div class="bgimg">
-            <img src="asedes/img/BGIMG.png" alt="bake grawind img">
+            <img src="~/asedes/img/BGIMG.png" alt="bake grawind img">
         </div>
         <div class="logo">
-            <img src="asedes/img/LOGO.png" alt="logo">
+            <img src="~/asedes/img/LOGO.png" alt="logo">
             <div class="logotext">
                 <span class="blue">G</span>
                 <span class="blue">L</span>
@@ -26,53 +28,58 @@
             <div class="nav_item">
                 <ul>
                     <li>
-                        <a href="#" active=true id="Home" onclick="Home_active()">Home</a>
+                        <a asp-action="Index" active=true id="Home" onclick="Home_active()">Home</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a href="#" active=false id="News" onclick="News_active()">News</a>
+                        <a asp-action="News" active=false id="News" onclick="News_active()">News</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a href="#" active=false id="Politics" onclick="Politics_active()">Politics</a>
+                        <a asp-action="Politics" active=false id="Politics" onclick="Politics_active()">Politics</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a href="#" active=false id="Health" onclick="Health_active()">Health</a>
+                        <a asp-action="Health" active=false id="Health" onclick="Health_active()">Health</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a href="#" active=false id="Sport" onclick="Sport_active()">Sport</a>
+                        <a asp-action="Sport" active=false id="Sport" onclick="Sport_active()">Sport</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a href="#" active=false id="Technology" onclick="Technology_active()">Technology</a>
+                        <a asp-action="Technology" active=false id="Technology" onclick="Technology_active()">Technology</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <div class="sarch">
-                        <input type="text" class="sharth" name="sarch">
-                        <img onclick="Sarch()" src="asedes/img/sarch.png">
+                        <form asp-action="Sarch" method="get">
+                            <input type="text" class="sharth" name="sarch" value="@ViewData["Sarching"]">
+                            
+                            <label for="SAR"><img src="~/asedes/img/sarch.png"></label>
+                            <input type="submit" id="SAR" hidden />
+                        </form>
                     </div>
 
                     <div id="nav_login">
                     <li>
-                        <a href="#" id="LOGIN">LOGIN</a>
+                        <a id="LOGIN">LOGIN</a>
                         <div class="nav_item_underline"></div>
                     </li>
             </div>
 
             <div id="nav_logedin">
                 <li>
-                    <a href="#" id="Acount" class="acount_img" onclick="Au_Acount_active()">
+                    <a id="Acount" class="acount_img" onclick="Ad_Acount_active()">
                         <p>User Name</p>
-                        <img src="asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
+                        <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
                     </a>
+                            @* فيصل *@
                     <div id="ADMEN_ACOUNT_POPUP">
                         <div class=" acount_bg_card">
                             <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
@@ -80,23 +87,23 @@
                                 <div class="card_contant">
                                     <ul>
                                         <li>
-                                            <a href="#" onclick="Create_Accont()">Create Account</a>
+                                            <a asp-action="Create_Account">Create Account</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Create_Contant()">Create plog</a>
+                                            <a asp-action="Create_Plog">Create plog</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Your_Contant()">View plog</a>
+                                            <a asp-action="Dashbord">View plog</a>
                                         </li>
 
                                         <div class="slpet"></div>
 
                                         <li>
-                                            <a href="#" onclick="logout()"
-                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                            <a href="/" onclick="logout()"
+                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
                                             </a>
                                         </li>
@@ -113,18 +120,18 @@
                                 <div class="card_contant">
                                     <ul>
                                         <li>
-                                            <a href="#" onclick="Acount_altrat()">profile</a>
+                                            <a asp-action="Edit_Account">profile</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Favuret()">Favorite</a>
+                                            <a asp-action="Favorite">Favorite</a>
                                         </li>
 
                                         <div class="slpet"></div>
                                         <li>
-                                            <a href="#" onclick="logout()"
-                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                            <a href="/" onclick="logout()"
+                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
                                             </a>
                                         </li>
@@ -141,27 +148,27 @@
                                 <div class="card_contant">
                                     <ul>
                                         <li>
-                                            <a href="#" onclick="Acount_altrat()">profile</a>
+                                            <a asp-action="Edit_Account">profile</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Create_Contant()">Create plog</a>
+                                            <a asp-action="Create_Plog">Create plog</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Your_Contant()">View plog</a>
+                                            <a asp-action="Dashbord">View plog</a>
                                         </li>
 
                                         <li>
-                                            <a href="#" onclick="Favuret()">Favorite</a>
+                                            <a asp-action="Favorite">Favorite</a>
                                         </li>
 
                                         <div class="slpet"></div>
 
                                         <li>
-                                            <a href="#" onclick="logout()"
-                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('asedes/Picture1.png')">
+                                            <a href="/" onclick="logout()"
+                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
                                             </a>
                                         </li>
@@ -170,6 +177,7 @@
                             </div>
                         </div>
                     </div>
+                            @* نهاية فيصل *@
                 </li>
 
             </div>
@@ -180,6 +188,106 @@
 
     </header>
         <main >
+
+        @* فيصل *@
+        <div class="popup" id="popup">
+            <div class="bg_card">
+                <div class="bg_card" onclick="Close_popup()"></div>
+                <div class="card">
+                    <img src="~/asedes/img/568140.png" class="close" onclick="Close_popup()">
+                    <div class="pop_left">
+                        <div class="pop_SingUP" id="SingUP">
+                            <div class="logotext">
+                                <span class="blue">G</span>
+                                <span class="blue">L</span>
+                                <span class="green">O</span>
+                                <span class="green">B</span>
+                                <span class="orange">E</span>
+                            </div>
+                            @* فورم انشاء حساب *@
+                            <form>
+                                <div class="feeld_name">
+                                    <div class="name_items">
+                                        <div class="feeld">
+                                            <input type="text" name="fname" id="sfn">
+                                            <label for="sfn">First Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="name_items">
+                                        <div class="feeld">
+                                            <input type="text" name="lname" id="sln">
+                                            <label for="sln">Last Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="feeld">
+                                    <input type="text" name="username" id="sun">
+                                    <label for="sun">User Name</label>
+                                </div>
+
+                                <div class="feeld">
+                                    <input type="text" name="email" id="se">
+                                    <label for="se">Email</label>
+                                </div>
+
+                                <div class="feeld">
+                                    <input type="text" name="password" id="spass">
+                                    <label for="spass">Password</label>
+                                </div>
+
+                                <div class="feeld">
+                                    <input type="text" name="repassword" id="srepass">
+                                    <label for="srepass">Repassword</label>
+                                </div>
+
+                                <input type="button" value="Register" onclick="use_the_acount()" class="but">
+                            </form>
+                        </div>
+                        <div class="pop_SingUP" id="LogIN">
+                            <div class="logotext">
+                                <span class="blue">G</span>
+                                <span class="blue">L</span>
+                                <span class="green">O</span>
+                                <span class="green">B</span>
+                                <span class="orange">E</span>
+                            </div>
+                            <div class="pop_titel">
+                                LOGIN with the GLOBE
+                            </div>
+                            @* فورم تسجيل الدخول *@
+                            <form>
+                                <div class="feeld">
+                                    <input type="text" name="username" id="lun">
+                                    <label for="lun">User Name or Email</label>
+                                </div>
+
+                                <div class="feeld">
+                                    <input type="text" name="password" id="lpass">
+                                    <label for="lpass">Password</label>
+                                </div>
+
+                                <input type="button" value="LOGIN" class="but" onclick="in_acount()">
+
+                                <div class="sing_up_a">
+                                    <a href="#" onclick="Register()">Don't have acount</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pop_rigth">
+                        <img src="~/asedes/skynews-post-office-protest_6413847.png" class="first">
+                        <img src="~/asedes/skynews-serco-doncaster-prison_5914750.png" class="secand">
+                        <img src="~/asedes/‏‏لقطة الشاشة (90).png" class="thared">
+                        <img src="~/asedes/‏‏لقطة الشاشة (92).png" class="forth">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* نهاية فيصل *@
+
             @RenderBody()
         </main>
 
@@ -188,40 +296,40 @@
             <div class="F_top">
                 <div class="f_News">
                     <ul>
-                        <li><a href="#" onclick="News_active()">News</a></li>
-                        <li><a href="#" onclick="News_active()">Live TV</a></li>
-                        <li><a href="#" onclick="News_active()">GLOBE Films</a></li>
-                        <li><a href="#" onclick="News_active()">HLM</a></li>
+                        <li><a asp-action="News">News</a></li>
+                        <li><a asp-action="News">Live TV</a></li>
+                        <li><a asp-action="News">GLOBE Films</a></li>
+                        <li><a asp-action="News">HLM</a></li>
                     </ul>
                 </div>
                 <div class="f_Politics">
                     <ul>
-                        <li><a href="#" onclick="Politics_active()">Politics</a></li>
-                        <li><a href="#" onclick="Politics_active()">Stal</a></li>
-                        <li><a href="#" onclick="Politics_active()">News</a></li>
-                        <li><a href="#" onclick="Politics_active()">Videos</a></li>
+                        <li><a asp-action="Politics">Politics</a></li>
+                        <li><a asp-action="Politics">Stal</a></li>
+                        <li><a asp-action="Politics">News</a></li>
+                        <li><a asp-action="Politics">Videos</a></li>
                     </ul>
                 </div>
                 <div class="f_Health">
                     <ul>
-                        <li><a href="#" onclick="Health_active()">Health</a></li>
-                        <li><a href="#" onclick="Health_active()">Food</a></li>
-                        <li><a href="#" onclick="Health_active()">Drink</a></li>
+                        <li><a asp-action="Health">Health</a></li>
+                        <li><a asp-action="Health">Food</a></li>
+                        <li><a asp-action="Health">Drink</a></li>
                     </ul>
                 </div>
                 <div class="f_Sport">
                     <ul>
-                        <li><a href="#" onclick="Sport_active()">Sport</a></li>
-                        <li><a href="#" onclick="Sport_active()">football</a></li>
-                        <li><a href="#" onclick="Sport_active()">Golf</a></li>
-                        <li><a href="#" onclick="Sport_active()">olympics</a></li>
+                        <li><a asp-action="Sport">Sport</a></li>
+                        <li><a asp-action="Sport">football</a></li>
+                        <li><a asp-action="Sport">Golf</a></li>
+                        <li><a asp-action="Sport">olympics</a></li>
                     </ul>
                 </div>
                 <div class="f_Technology">
                     <ul>
-                        <li><a href="#" onclick="Technology_active()">Technology</a></li>
-                        <li><a href="#" onclick="Technology_active()">Digitial</a></li>
-                        <li><a href="#" onclick="Technology_active()">studios</a></li>
+                        <li><a asp-action="Technology">Technology</a></li>
+                        <li><a asp-action="Technology">Digitial</a></li>
+                        <li><a asp-action="Technology">studios</a></li>
                     </ul>
                 </div>
             </div>
@@ -235,7 +343,7 @@
         <div class="F_rigth">
             <div class="F_logo">
                 <div class="logoimg">
-                    <img src="asedes/img/LOGO_F.png" alt="logo">
+                    <img src="~/asedes/img/LOGO_F.png" alt="logo">
                 </div>
                 <div class="text">
                     <div class="logotext">
@@ -252,6 +360,12 @@
         </div>
 
     </footer>
+    @{
+        string JS = ViewBag.JS;
+    }
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -28,6 +28,9 @@
     font-family: 'Roboto';
     box-sizing: border-box;
 }
+a{
+    cursor:pointer;
+}
 
 img {
     display: block;
@@ -274,14 +277,6 @@ main {
     display: block;
 }
 
-#NEWS,
-#POLITICS,
-#HEALTH,
-#SPORT,
-#TECHNOLOGY,
-#SARCH,
-#EDIT_ACCONTE,
-#FAVURET,
 #CREATE_CONTANT,
 #YOUR_CONTANT,
 #CREATE_ACCOUNT,
@@ -753,6 +748,10 @@ main .popup {
     height: 300px;
 }
 
+.AE_F_Text input[type = "radio"] {
+    display: block;
+}
+
 .AE_F_Text img {
     cursor: pointer;
     position: absolute;
@@ -772,6 +771,11 @@ main .popup {
     height: 220px;
     margin-bottom: 50px;
     border-radius: 10px;
+}
+
+.rb_tit {
+    display:block;
+    margin: 50px 0 0 250px;
 }
 
 .Fav {

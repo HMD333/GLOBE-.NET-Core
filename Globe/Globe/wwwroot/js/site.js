@@ -58,8 +58,6 @@ var create_account_el = document.getElementById("CREATE_ACCOUNT");
 
 var edit_account_el = document.getElementById("EDIT_ACCONTE");
 
-var post_el = document.getElementById("POST");
-
 var fav_Card_sp_el = document.getElementById("fav_Card_sp");
 
 var fav_Card_po_el = document.getElementById("fav_Card_po");
@@ -87,7 +85,6 @@ function Home_active(){
     technology_el.style.display = "none";
     sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -104,15 +101,7 @@ function Home_active(){
 };
 
 function News_active(){
-    home_el.style.display = "none";
-    news_el.style.display = "block";
-    politics_el.style.display = "none";
-    health_el.style.display = "none";
-    sport_el.style.display = "none";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -128,15 +117,7 @@ function News_active(){
 };
 
 function Politics_active(){
-    home_el.style.display = "none";
-    news_el.style.display = "none";
-    politics_el.style.display = "block";
-    health_el.style.display = "none";
-    sport_el.style.display = "none";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -152,15 +133,7 @@ function Politics_active(){
 };
 
 function Health_active(){
-    home_el.style.display = "none";
-    news_el.style.display = "none";
-    politics_el.style.display = "none";
-    health_el.style.display = "block";
-    sport_el.style.display = "none";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -176,15 +149,7 @@ function Health_active(){
 };
 
 function Sport_active(){
-    home_el.style.display = "none";
-    news_el.style.display = "none";
-    politics_el.style.display = "none";
-    health_el.style.display = "none";
-    sport_el.style.display = "block";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -200,15 +165,7 @@ function Sport_active(){
 };
 
 function Technology_active(){
-    home_el.style.display = "none";
-    news_el.style.display = "none";
-    politics_el.style.display = "none";
-    health_el.style.display = "none";
-    sport_el.style.display = "none";
-    technology_el.style.display = "block";
-    sarch_el.style.display = "none";
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
@@ -222,27 +179,19 @@ function Technology_active(){
     Technology_el.setAttribute("active", "true");
 };
 
-function Sarch(){
-    home_el.style.display = "none";
-    news_el.style.display = "none";
-    politics_el.style.display = "none";
-    health_el.style.display = "none";
-    sport_el.style.display = "none";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "block";
+function Sarch() {
     favuret_el.style.display = "none";
-    post_el.style.display = "none";
     create_contant_el.style.display = "none";
     your_contant_el.style.display = "none";
     create_account_el.style.display = "none";
-
+    edit_account_el.style.display = "none";
 
     Home_el.setAttribute("active", "false");
     News_el.setAttribute("active", "false");
     Politics_el.setAttribute("active", "false");
     Health_el.setAttribute("active", "false");
     Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "true");
+    Technology_el.setAttribute("active", "false");
 };
 
 function Acount_altrat(){
@@ -267,15 +216,6 @@ function Favuret(){
     Home_el.setAttribute("active", "false");
 };
 
-function Post(){
-
-    Home_active()
-    home_el.style.display = "none";
-    post_el.style.display = "block";
-
-
-    Home_el.setAttribute("active", "false");
-};
 
 function Create_Contant(){
     Close_acount_popup()

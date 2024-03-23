@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Globe.Data.News>
+@{
+    foreach (var News in Model){
+        <div class="main_contant">
+            <div class="title">Sarch</div>
+
+            <div class="contant_card">
+                <a asp-action="Post">
+                    <img src="~/@News.Img_path">
+                </a>
+                <div class="text">
+                    <p>
+                        @News.Title
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+}
+
