@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Globe.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20240313230024_Globe_1")]
-    partial class Globe_1
+    [Migration("20240325030506_Globe1")]
+    partial class Globe1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,32 +24,7 @@ namespace Globe.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Globe.Models.Admin", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("User_Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Admin");
-                });
-
-            modelBuilder.Entity("Globe.Models.Auther", b =>
+            modelBuilder.Entity("Globe.Data.Auther", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -85,7 +60,7 @@ namespace Globe.Migrations
                     b.ToTable("Auther");
                 });
 
-            modelBuilder.Entity("Globe.Models.News", b =>
+            modelBuilder.Entity("Globe.Data.News", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -131,7 +106,7 @@ namespace Globe.Migrations
                     b.ToTable("News");
                 });
 
-            modelBuilder.Entity("Globe.Models.Politlcs", b =>
+            modelBuilder.Entity("Globe.Data.Politlcs", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -148,7 +123,7 @@ namespace Globe.Migrations
                     b.ToTable("Politlcs");
                 });
 
-            modelBuilder.Entity("Globe.Models.Sport", b =>
+            modelBuilder.Entity("Globe.Data.Sport", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -168,7 +143,7 @@ namespace Globe.Migrations
                     b.ToTable("Sport");
                 });
 
-            modelBuilder.Entity("Globe.Models.Technolgy", b =>
+            modelBuilder.Entity("Globe.Data.Technolgy", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -185,7 +160,43 @@ namespace Globe.Migrations
                     b.ToTable("Technolgy");
                 });
 
-            modelBuilder.Entity("Globe.Models.Weather", b =>
+            modelBuilder.Entity("Globe.Data.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<short?>("Faverat")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("First_Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Last_Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Usar_Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Globe.Data.Weather", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -200,6 +211,31 @@ namespace Globe.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Weather");
+                });
+
+            modelBuilder.Entity("Globe.Models_DB.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("User_Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Admin");
                 });
 #pragma warning restore 612, 618
         }

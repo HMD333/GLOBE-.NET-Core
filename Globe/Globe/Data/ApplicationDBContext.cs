@@ -11,6 +11,7 @@ namespace Globe.Data
         }
 
         public DbSet<Admin> Admin { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<Auther> Auther { get; set; }
         public DbSet<Sport> Sport { get; set; }
         public DbSet<Politlcs> Politlcs { get; set; }

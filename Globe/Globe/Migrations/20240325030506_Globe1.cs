@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Globe.Migrations
 {
-    public partial class Globe_1 : Migration
+    public partial class Globe1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,7 +52,7 @@ namespace Globe.Migrations
                     Type_id = table.Column<int>(type: "int", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sup_Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Article = table.Column<string>(type: "text", nullable: false),
+                    Article = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Img_path = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date_Time = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Au_Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -104,6 +104,24 @@ namespace Globe.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "User",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    First_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Last_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Usar_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Faverat = table.Column<short>(type: "smallint", nullable: true),
+                    password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_User", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Weather",
                 columns: table => new
                 {
@@ -136,6 +154,9 @@ namespace Globe.Migrations
 
             migrationBuilder.DropTable(
                 name: "Technolgy");
+
+            migrationBuilder.DropTable(
+                name: "User");
 
             migrationBuilder.DropTable(
                 name: "Weather");
