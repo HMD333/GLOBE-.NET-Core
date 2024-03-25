@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Globe.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20240325030506_Globe1")]
-    partial class Globe1
+    [Migration("20240325031652_GLOBE")]
+    partial class GLOBE
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -58,6 +58,23 @@ namespace Globe.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Auther");
+                });
+
+            modelBuilder.Entity("Globe.Data.Health", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Health");
                 });
 
             modelBuilder.Entity("Globe.Data.News", b =>
@@ -194,23 +211,6 @@ namespace Globe.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("User");
-                });
-
-            modelBuilder.Entity("Globe.Data.Weather", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Weather");
                 });
 
             modelBuilder.Entity("Globe.Models_DB.Admin", b =>

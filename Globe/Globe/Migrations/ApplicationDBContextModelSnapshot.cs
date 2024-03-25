@@ -58,6 +58,23 @@ namespace Globe.Migrations
                     b.ToTable("Auther");
                 });
 
+            modelBuilder.Entity("Globe.Data.Health", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Health");
+                });
+
             modelBuilder.Entity("Globe.Data.News", b =>
                 {
                     b.Property<int>("Id")
@@ -192,23 +209,6 @@ namespace Globe.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("User");
-                });
-
-            modelBuilder.Entity("Globe.Data.Weather", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Weather");
                 });
 
             modelBuilder.Entity("Globe.Models_DB.Admin", b =>

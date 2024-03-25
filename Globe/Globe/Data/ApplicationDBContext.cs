@@ -16,7 +16,7 @@ namespace Globe.Data
         public DbSet<Sport> Sport { get; set; }
         public DbSet<Politlcs> Politlcs { get; set; }
         public DbSet<Technolgy> Technolgy { get; set; }
-        public DbSet<Weather> Weather { get; set; }
+        public DbSet<Health> Health { get; set; }
         public DbSet<News> News { get; set; }
 
     }

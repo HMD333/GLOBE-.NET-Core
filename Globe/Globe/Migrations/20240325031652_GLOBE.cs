@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Globe.Migrations
 {
-    public partial class Globe1 : Migration
+    public partial class GLOBE : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,6 +40,19 @@ namespace Globe.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Auther", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Health",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Health", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -120,19 +133,6 @@ namespace Globe.Migrations
                 {
                     table.PrimaryKey("PK_User", x => x.Id);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "Weather",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Weather", x => x.Id);
-                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -142,6 +142,9 @@ namespace Globe.Migrations
 
             migrationBuilder.DropTable(
                 name: "Auther");
+
+            migrationBuilder.DropTable(
+                name: "Health");
 
             migrationBuilder.DropTable(
                 name: "News");
@@ -157,9 +160,6 @@ namespace Globe.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
-
-            migrationBuilder.DropTable(
-                name: "Weather");
         }
     }
 }

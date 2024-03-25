@@ -2,7 +2,7 @@
 
 namespace Globe.Data
 {
-    public class Weather
+    public class Health
     {
         public int Id { get; set; }
         [Required]
