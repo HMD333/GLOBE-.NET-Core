@@ -1,5 +1,6 @@
 ﻿using Globe.Data;
 using Globe.Models;
+using Globe.Models_DB;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -100,8 +101,80 @@ namespace Globe.Controllers
 
         public IActionResult Create_Account()
         {
+
             ViewData["Title"] = "Create Account";
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult login(log_in_and_regastration login)
+        {
+            string? _usename = null;
+            string? _type = null;
+
+            IEnumerable<Admin> Admin = from u in _dBContext.Admin
+                                       select u;
+            Admin = Admin.Where(n => (n.User_Name == login.username || n.Email == login.username) && n.Password == login.password);
+
+            if (Admin.Any())
+            {
+                _usename = Admin.First().User_Name;
+                _type = "ad";
+                //Admin = Admin.Where(n => n.User_Name.Contains(login));
+                //To Save User Name
+                CookieOptions ur = new CookieOptions();
+                ur.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Append("User_Name", _usename, ur);
+                // To Save Athoraies
+                CookieOptions ath = new CookieOptions();
+                ath.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Append("User_type", _type, ath);
+            }
+            else
+            {
+                IEnumerable<Auther> Auther = from u in _dBContext.Auther
+                                             select u;
+                Auther = Auther.Where(n => (n.Username == login.username || n.Email == login.username) && n.Password == login.password);
+
+                if (Auther.Any())
+                {
+                    _usename = Auther.First().Username;
+                    _type = "au";
+                    //Admin = Admin.Where(n => n.User_Name.Contains(login));
+                    //To Save User Name
+                    CookieOptions ur = new CookieOptions();
+                    ur.Expires = DateTime.Now.AddMonths(6);
+                    Response.Cookies.Append("User_Name", _usename, ur);
+                    // To Save Athoraies
+                    CookieOptions ath = new CookieOptions();
+                    ath.Expires = DateTime.Now.AddMonths(6);
+                    Response.Cookies.Append("User_type", _type, ath);
+                }
+                else
+                {
+                    IEnumerable<User> User = from u in _dBContext.User
+                                             select u;
+                    User = User.Where(n => (n.Usar_Name == login.username || n.Email == login.username) && n.password == login.password);
+
+                    if (User.Any())
+                    {
+                        _usename = User.First().Usar_Name;
+                        _type = "ur";
+                        //Admin = Admin.Where(n => n.User_Name.Contains(login));
+                        //To Save User Name
+                        CookieOptions ur = new CookieOptions();
+                        ur.Expires = DateTime.Now.AddMonths(6);
+                        Response.Cookies.Append("User_Name", _usename, ur);
+                        // To Save Athoraies
+                        CookieOptions ath = new CookieOptions();
+                        ath.Expires = DateTime.Now.AddMonths(6);
+                        Response.Cookies.Append("User_type", _type, ath);
+
+                    }
+                }
+            }
+            return RedirectToAction("Index");
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

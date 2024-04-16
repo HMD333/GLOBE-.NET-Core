@@ -175,7 +175,6 @@ img {
     display: block;
 }
 
-#nav_logedin,
 #USER_ACOUNT_POPUP,
 #ADMEN_ACOUNT_POPUP,
 #AUTHER_ACOUNT_POPUP {
@@ -625,7 +624,7 @@ main .popup {
     transition: .5s;
 }
 
-.pop_SingUP input[type = "button"] {
+.pop_SingUP input[type = "submit"] {
     cursor: pointer;
     background-color: var(--white);
     border: transparent;

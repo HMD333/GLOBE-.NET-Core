@@ -1,5 +1,6 @@
 ﻿using Globe.Models_DB;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
 
 namespace Globe.Data
 {
@@ -18,6 +19,21 @@ namespace Globe.Data
         public DbSet<Technolgy> Technolgy { get; set; }
         public DbSet<Health> Health { get; set; }
         public DbSet<News> News { get; set; }
+
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Admin>()
+                .HasIndex(b => b.User_Name)
+                .IsUnique();
+
+            modelBuilder.Entity<Auther>()
+                .HasIndex(b => b.Username)
+                .IsUnique();
+
+            modelBuilder.Entity<User>()
+                .HasIndex(b => b.Usar_Name)
+                .IsUnique();
+        }*/
 
     }
 }

@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web;
+@using Microsoft.AspNetCore.Http;
+@model log_in_and_regastration
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -66,123 +70,152 @@
                         </form>
                     </div>
 
-                    <div id="nav_login">
-                    <li>
-                        <a id="LOGIN">LOGIN</a>
-                        <div class="nav_item_underline"></div>
-                    </li>
-            </div>
-
-            <div id="nav_logedin">
-                <li>
-                    <a id="Acount" class="acount_img" onclick="Ad_Acount_active()">
-                        <p>User Name</p>
-                        <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
-                    </a>
-                            @* فيصل *@
-                    <div id="ADMEN_ACOUNT_POPUP">
-                        <div class=" acount_bg_card">
-                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
-                            <div class="card" account_type="Admen">
-                                <div class="card_contant">
-                                    <ul>
-                                        <li>
-                                            <a asp-action="Create_Account">Create Account</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Create_Plog">Create plog</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Dashbord">View plog</a>
-                                        </li>
-
-                                        <div class="slpet"></div>
-
-                                        <li>
-                                            <a href="/" onclick="logout()"
-                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
-                                                Logout <img src="asedes/Picture1.png" id="logoicon">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    @{
+                        string cookieValue = Context.Request.Cookies["User_type"];
+                        if (string.IsNullOrEmpty(cookieValue))
+                        {
+                            <div id="nav_login">
+                                <li>
+                                    <a id="LOGIN">LOGIN</a>
+                                    <div class="nav_item_underline"></div>
+                                </li>
                             </div>
-                        </div>
-                    </div>
-
-                    <div id="USER_ACOUNT_POPUP">
-                        <div class=" acount_bg_card">
-                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
-                            <div class="card" account_type="User">
-                                <div class="card_contant">
-                                    <ul>
-                                        <li>
-                                            <a asp-action="Edit_Account">profile</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Favorite">Favorite</a>
-                                        </li>
-
-                                        <div class="slpet"></div>
-                                        <li>
-                                            <a href="/" onclick="logout()"
-                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
-                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                        }
+                        else
+                        {
+                            string cookieName = Context.Request.Cookies["User_Name"];
+                            <div id="nav_logedin">
+                                <li>
+                                    @{
+                                        if(cookieValue == "ad")
+                                        {
+                                            <a id="Acount" class="acount_img" onclick="Ad_Acount_active()">
+                                                <p>@cookieName</p>
+                                                <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
                                             </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="AUTHER_ACOUNT_POPUP">
-                        <div class=" acount_bg_card">
-                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
-                            <div class="card" account_type="Auther">
-                                <div class="card_contant">
-                                    <ul>
-                                        <li>
-                                            <a asp-action="Edit_Account">profile</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Create_Plog">Create plog</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Dashbord">View plog</a>
-                                        </li>
-
-                                        <li>
-                                            <a asp-action="Favorite">Favorite</a>
-                                        </li>
-
-                                        <div class="slpet"></div>
-
-                                        <li>
-                                            <a href="/" onclick="logout()"
-                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
-                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                        }
+                                        else if (cookieValue == "au")
+                                        {
+                                            <a id="Acount" class="acount_img" onclick="Au_Acount_active()">
+                                             <p>@cookieName</p>
+                                                <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
                                             </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                        }else if(cookieValue == "ur")
+                                        {
+                                            <a id="Acount" class="acount_img" onclick="Us_Acount_active()">
+                                                <p>@cookieName</p>
+                                                <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
+                                            </a>
+                                        }
+                                    }
+                                    
+                                            @* فيصل *@
+                                    <div id="ADMEN_ACOUNT_POPUP">
+                                        <div class=" acount_bg_card">
+                                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                            <div class="card" account_type="Admen">
+                                                <div class="card_contant">
+                                                    <ul>
+                                                                @*//كاتب*@
+                                                        <li>
+                                                            <a asp-action="Create_Account">Create Account</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Create_Plog">Create plog</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Dashbord">View plog</a>
+                                                        </li>
+
+                                                        <div class="slpet"></div>
+
+                                                        <li>
+                                                            <a href="/" onclick="logout()"
+                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="USER_ACOUNT_POPUP">
+                                        <div class=" acount_bg_card">
+                                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                            <div class="card" account_type="User">
+                                                <div class="card_contant">
+                                                    <ul>
+                                                        <li>
+                                                            <a asp-action="Edit_Account">profile</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Favorite">Favorite</a>
+                                                        </li>
+
+                                                        <div class="slpet"></div>
+                                                        <li>
+                                                            <a href="/" onclick="logout()"
+                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="AUTHER_ACOUNT_POPUP">
+                                        <div class=" acount_bg_card">
+                                            <div class="acount_bg_card" onclick="Close_acount_popup()"></div>
+                                            <div class="card" account_type="Auther">
+                                                <div class="card_contant">
+                                                    <ul>
+                                                        <li>
+                                                            <a asp-action="Edit_Account">profile</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Create_Plog">Create plog</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Dashbord">View plog</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a asp-action="Favorite">Favorite</a>
+                                                        </li>
+
+                                                        <div class="slpet"></div>
+
+                                                        <li>
+                                                            <a href="/" onclick="logout()"
+                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                            @* نهاية فيصل *@
+                                </li>
+
                             </div>
-                        </div>
-                    </div>
-                            @* نهاية فيصل *@
-                </li>
 
-            </div>
-
-            </ul>
+                        }
+                    }
+                </ul>
             </div>
         </nav>
 
@@ -257,18 +290,18 @@
                                 LOGIN with the GLOBE
                             </div>
                             @* فورم تسجيل الدخول *@
-                            <form>
+                            <form asp-action="login" method="post">
                                 <div class="feeld">
-                                    <input type="text" name="username" id="lun">
+                                    <input type="text" asp-for="username"  id="lun">
                                     <label for="lun">User Name or Email</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="password" id="lpass">
+                                    <input type="text" asp-for="password" id="lpass">
                                     <label for="lpass">Password</label>
                                 </div>
 
-                                <input type="button" value="LOGIN" class="but" onclick="in_acount()">
+                                <input type="submit" value="LOGIN" class="but">
 
                                 <div class="sing_up_a">
                                     <a href="#" onclick="Register()">Don't have acount</a>

@@ -1,10 +1,10 @@
 ﻿<div class="main_contant">
     <div class="title">Create Account</div>
     @* فورم انشاء حساب للكاتب *@
-    <form class="Form">
+    <form class="Form" asp-controller="Home" asp-action="Create_Account" method="post">
         <div class="AE_F_Text">
             <label>First Name</label>
-            <input type="text" name="fname" placeholder="Enter First Name">
+            <input  type="text" name="fname" placeholder="Enter First Name">
         </div>
 
         <div class="AE_F_Text">
