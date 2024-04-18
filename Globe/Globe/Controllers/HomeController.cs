@@ -107,6 +107,92 @@ namespace Globe.Controllers
         }
 
         [HttpPost]
+        public IActionResult new_auther(_Auther au)
+        {
+            IEnumerable<Auther> Auther = from u in _dBContext.Auther
+                                     select u;
+            Auther = Auther.Where(n => (n.Username == au.Username || n.Email == au.Username) && n.Password == au.Password);
+
+            if (!Auther.Any())
+            {
+                if (au.Password == au.RePassword)
+                {
+                    _dBContext.Auther.Add(
+                    new Auther
+                    {
+                        Fist_Name = au.First_Name,
+                        Last_Name = au.Last_Name,
+                        Username = au.Username,
+                        Password = au.Password,
+                        Email = au.Email
+                    });
+
+                    _dBContext.SaveChanges();
+                }
+                
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult regastration(log_in_and_regastration regastration)
+        {
+            string? _usename = null;
+            string? _type = null;
+
+            IEnumerable<User> User = from u in _dBContext.User
+                                     select u;
+            User = User.Where(n => (n.Usar_Name == regastration.r_uname || n.Email == regastration.r_uname) && n.password == regastration.r_password);
+
+            if (!User.Any())
+            {
+                if(regastration.r_password == regastration.r_repassword)
+                {
+                    _dBContext.User.Add(
+                    new User
+                    {
+                        First_Name = regastration.r_fname,
+                        Last_Name = regastration.r_lname,
+                        Usar_Name = regastration.r_uname,
+                        password = regastration.r_password,
+                        Email = regastration.r_email
+                    });
+
+                    _dBContext.SaveChanges();
+
+                    _usename = User.First().Usar_Name;
+                    _type = "ur";
+                    //Admin = Admin.Where(n => n.User_Name.Contains(login));
+                    //To Save User Name
+                    CookieOptions ur = new CookieOptions();
+                    ur.Expires = DateTime.Now.AddMonths(6);
+                    Response.Cookies.Append("User_Name", _usename, ur);
+                    // To Save Athoraies
+                    CookieOptions ath = new CookieOptions();
+                    ath.Expires = DateTime.Now.AddMonths(6);
+                    Response.Cookies.Append("User_type", _type, ath);
+                }
+
+            }
+            else
+            {
+                _usename = User.First().Usar_Name;
+                _type = "ur";
+                //Admin = Admin.Where(n => n.User_Name.Contains(login));
+                //To Save User Name
+                CookieOptions ur = new CookieOptions();
+                ur.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Append("User_Name", _usename, ur);
+                // To Save Athoraies
+                CookieOptions ath = new CookieOptions();
+                ath.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Append("User_type", _type, ath);
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
         public IActionResult login(log_in_and_regastration login)
         {
             string? _usename = null;
@@ -114,7 +200,7 @@ namespace Globe.Controllers
 
             IEnumerable<Admin> Admin = from u in _dBContext.Admin
                                        select u;
-            Admin = Admin.Where(n => (n.User_Name == login.username || n.Email == login.username) && n.Password == login.password);
+            Admin = Admin.Where(n => (n.User_Name == login.l_username || n.Email == login.l_username) && n.Password == login.l_password);
 
             if (Admin.Any())
             {
@@ -134,7 +220,7 @@ namespace Globe.Controllers
             {
                 IEnumerable<Auther> Auther = from u in _dBContext.Auther
                                              select u;
-                Auther = Auther.Where(n => (n.Username == login.username || n.Email == login.username) && n.Password == login.password);
+                Auther = Auther.Where(n => (n.Username == login.l_username || n.Email == login.l_username) && n.Password == login.l_password);
 
                 if (Auther.Any())
                 {
@@ -154,7 +240,7 @@ namespace Globe.Controllers
                 {
                     IEnumerable<User> User = from u in _dBContext.User
                                              select u;
-                    User = User.Where(n => (n.Usar_Name == login.username || n.Email == login.username) && n.password == login.password);
+                    User = User.Where(n => (n.Usar_Name == login.l_username || n.Email == login.l_username) && n.password == login.l_password);
 
                     if (User.Any())
                     {
@@ -175,6 +261,13 @@ namespace Globe.Controllers
             }
             return RedirectToAction("Index");
 
+        }
+
+        public IActionResult logout()
+        {
+            Response.Cookies.Delete("User_Name");
+            Response.Cookies.Delete("User_type");
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -132,7 +132,7 @@
                                                         <div class="slpet"></div>
 
                                                         <li>
-                                                            <a href="/" onclick="logout()"
+                                                            <a asp-action="logout" onclick="logout()"
                                                                onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
                                                                onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
@@ -160,7 +160,7 @@
 
                                                         <div class="slpet"></div>
                                                         <li>
-                                                            <a href="/" onclick="logout()"
+                                                            <a asp-action="logout" onclick="logout()"
                                                                onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
                                                                onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
@@ -197,7 +197,7 @@
                                                         <div class="slpet"></div>
 
                                                         <li>
-                                                            <a href="/" onclick="logout()"
+                                                            <a asp-action="logout" onclick="logout()"
                                                                onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
                                                                onmouseleave="logout_icon('~/asedes/Picture1.png')">
                                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
@@ -238,44 +238,44 @@
                                 <span class="orange">E</span>
                             </div>
                             @* فورم انشاء حساب *@
-                            <form>
+                            <form asp-action="regastration" method="post">
                                 <div class="feeld_name">
                                     <div class="name_items">
                                         <div class="feeld">
-                                            <input type="text" name="fname" id="sfn">
+                                            <input type="text" asp-for="r_fname" id="sfn">
                                             <label for="sfn">First Name</label>
                                         </div>
                                     </div>
 
                                     <div class="name_items">
                                         <div class="feeld">
-                                            <input type="text" name="lname" id="sln">
+                                            <input type="text" asp-for="r_lname" id="sln">
                                             <label for="sln">Last Name</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="username" id="sun">
+                                    <input type="text" asp-for="r_uname" id="sun">
                                     <label for="sun">User Name</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="email" id="se">
+                                    <input type="text" asp-for="r_email" id="se">
                                     <label for="se">Email</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="password" id="spass">
+                                    <input type="text" asp-for="r_password" id="spass">
                                     <label for="spass">Password</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="repassword" id="srepass">
+                                    <input type="text" asp-for="r_repassword" id="srepass">
                                     <label for="srepass">Repassword</label>
                                 </div>
 
-                                <input type="button" value="Register" onclick="use_the_acount()" class="but">
+                                <input type="submit" value="Register" onclick="use_the_acount()" class="but">
                             </form>
                         </div>
                         <div class="pop_SingUP" id="LogIN">
@@ -290,14 +290,15 @@
                                 LOGIN with the GLOBE
                             </div>
                             @* فورم تسجيل الدخول *@
+
                             <form asp-action="login" method="post">
                                 <div class="feeld">
-                                    <input type="text" asp-for="username"  id="lun">
+                                    <input type="text" asp-for="l_username"  id="lun">
                                     <label for="lun">User Name or Email</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" asp-for="password" id="lpass">
+                                    <input type="text" asp-for="l_password" id="lpass">
                                     <label for="lpass">Password</label>
                                 </div>
 

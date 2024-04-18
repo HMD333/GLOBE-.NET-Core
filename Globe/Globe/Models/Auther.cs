@@ -16,6 +16,7 @@ namespace Globe.Data
         [Required]
         [PasswordPropertyText]
         public string? Password { get; set; }
+
         [Required]
         [EmailAddress]
         public string? Email { get; set; }

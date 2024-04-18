@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Github-Folder\\New folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj": {}
+    "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj": {}
   },
   "projects": {
-    "E:\\Github-Folder\\New folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj": {
+    "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github-Folder\\New folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
+        "projectUniqueName": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
         "projectName": "Globe",
-        "projectPath": "E:\\Github-Folder\\New folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
+        "projectPath": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Globe.csproj",
         "packagesPath": "C:\\Users\\M.U.T.7\\.nuget\\packages\\",
-        "outputPath": "E:\\Github-Folder\\New folder\\ITPG3Baqshmer\\Globe\\Globe\\obj\\",
+        "outputPath": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,39 +1,41 @@
-﻿<div class="main_contant">
+﻿@using Globe.Data
+@model _Auther
+<div class="main_contant">
     <div class="title">Create Account</div>
     @* فورم انشاء حساب للكاتب *@
-    <form class="Form" asp-controller="Home" asp-action="Create_Account" method="post">
+    <form class="Form" asp-controller="Home" asp-action="new_auther" method="post">
         <div class="AE_F_Text">
             <label>First Name</label>
-            <input  type="text" name="fname" placeholder="Enter First Name">
+            <input type="text" asp-for="First_Name" placeholder="Enter First Name">
         </div>
 
         <div class="AE_F_Text">
             <label>Last Name</label>
-            <input type="text" name="lname" placeholder="Enter Last Name">
+            <input type="text" asp-for="Last_Name" placeholder="Enter Last Name">
         </div>
 
         <div class="AE_F_Text">
             <label>User Name</label>
-            <input type="text" name="uname" placeholder="Enter User Name">
+            <input type="text" asp-for="Username" placeholder="Enter User Name">
         </div>
 
         <div class="AE_F_Text">
             <label>Email</label>
-            <input type="email" name="email" placeholder="Enter Email">
+            <input type="email" asp-for="Email" placeholder="Enter Email">
         </div>
 
         <div class="AE_F_Text">
             <label>Password</label>
-            <input type="Password" name="email" placeholder="Enter Password">
+            <input type="Password" asp-for="Password" placeholder="Enter Password">
         </div>
 
         <div class="AE_F_Text">
             <label>Repassword</label>
-            <input type="Password" name="email" placeholder="Re Enter password">
+            <input type="Password" asp-for="RePassword" placeholder="Re Enter password">
         </div>
 
         <div class="AE_F_Text">
-            <input type="button" name="title" value="submit">
+            <input type="submit" value="submit">
         </div>
     </form>
 </div>
