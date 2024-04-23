@@ -21,6 +21,10 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\asedes\img\Health\" />
+    <Folder Include="wwwroot\asedes\img\Soprt\" />
+    <Folder Include="wwwroot\asedes\img\Technology\" />
+    <Folder Include="wwwroot\asedes\img\Politics\" />
   </ItemGroup>
 
 </Project>

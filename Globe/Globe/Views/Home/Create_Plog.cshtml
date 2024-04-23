@@ -1,46 +1,47 @@
-﻿<div class="main_contant">
+﻿@model create_plog
+<div class="main_contant">
     <div class="title">Create Plog</div>
-    <form class="Form">
+    <form class="Form" asp-action="Create_plog" method="post">
         <div class="AE_F_Text">
             <label>Title</label>
-            <input type="text" name="title" placeholder="Enter Title">
+            <input type="text" asp-for="Title" placeholder="Enter Title">
         </div>
 
         <div class="AE_F_Text">
             <label>Sub Title</label>
-            <input type="text" name="stitle" placeholder="Enter Sub Title">
+            <input type="text" asp-for="Sup_Title" placeholder="Enter Sub Title">
         </div>
 
         <div class="AE_F_Text">
             <label for="img">Iamges <img src="~/asedes/Picture2.png"></label>
 
-            <input type="file" name="img" id="img" hidden>
+            <input asp-for="Img" id="img" hidden>
             <div class="img_ph"></div>
         </div>
 
         <div class="AE_F_Text">
             <label>The NEWS</label>
-            <input type="text" name="the-news">
+            <input type="text" asp-for="Article">
         </div>
 
         <label class="rb_tit">NEWS Type</label>
         <div class="AE_F_Text">
             <label>Spore</label>
-            <input type="radio" name="NT" value="Spore" />
+            <input type="radio" asp-for="Type" value="Spore" />
         </div>
 
         <div class="AE_F_Text">
             <label>Politics</label>
-            <input type="radio" name="NT" value="Politics" />
+            <input type="radio" asp-for="Type" value="Politics" />
         </div>
 
         <div class="AE_F_Text">
             <label>Health</label>
-            <input type="radio" name="NT" value="Health" />
+            <input type="radio" asp-for="Type" value="Health" />
         </div>
         <div class="AE_F_Text">
             <label>Technology</label>
-            <input type="radio" name="NT" value="Technology" />
+            <input type="radio" asp-for="Type" value="Technology" />
         </div>
 
         <div class="AE_F_Text">

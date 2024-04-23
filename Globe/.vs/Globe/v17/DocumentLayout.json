@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\home\\create_account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\create_account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\models\\edit_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\models\\edit_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\home\\edit_account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\edit_account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +40,7 @@
               "RelativeDocumentMoniker": "Globe\\Controllers\\HomeController.cs",
               "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Globe\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAAAH0AAAAZAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAiwHwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T20:18:20.287Z",
               "IsPinned": true,
@@ -37,14 +49,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create_Account.cshtml",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Create_Account.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Create_Account.cshtml",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Create_Account.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Create_Account.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAgAAAArAAAA",
+              "Title": "Edit_Account.cs",
+              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Models\\Edit_Account.cs",
+              "RelativeDocumentMoniker": "Globe\\Models\\Edit_Account.cs",
+              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Models\\Edit_Account.cs",
+              "RelativeToolTip": "Globe\\Models\\Edit_Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:26:27.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit_Account.cshtml",
+              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Edit_Account.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Edit_Account.cshtml",
+              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Edit_Account.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Edit_Account.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T17:55:00.89Z",
+              "WhenOpened": "2024-04-23T10:22:58.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T09:53:03.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Globe\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Globe\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAADgBAAAAAAAAAAAAAEUBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-22T08:24:00.753Z",
               "EditorCaption": ""
             }
           ]

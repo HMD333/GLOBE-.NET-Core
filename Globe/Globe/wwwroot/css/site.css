@@ -320,6 +320,11 @@ main .most_watched {
     top: 0;
 }
 
+.ERORR {
+    font-size: 50px;
+    text-align: center;
+}
+
 .most_watched .sup_card {
     position: relative;
     display: block;

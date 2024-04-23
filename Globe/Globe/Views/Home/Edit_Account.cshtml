@@ -1,14 +1,15 @@
-﻿<div class="main_contant">
+﻿@model Edit_Account
+<div class="main_contant">
     <div class="title">Edit Account</div>
-    <form class="Form">
+    <form class="Form" asp-action="Edit_Account">
         <div class="AE_F_Text">
             <label>First Name</label>
-            <input type="text" name="fname" placeholder="Change First Name">
+            <input type="text" asp-for="fname" placeholder="Change First Name">
         </div>
 
         <div class="AE_F_Text">
             <label>Last Name</label>
-            <input type="text" name="lname" placeholder="Change Last Name">
+            <input type="text" asp-for="lname" placeholder="Change Last Name">
         </div>
 
         <div class="AE_F_Text">

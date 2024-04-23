@@ -9,9 +9,7 @@ namespace Globe.Data
         [Required]
         public string? Type { get; set; }
         [Required]
-        public int Type_id { get; set; }
-        [Required]
-        public string? Title { get; set; }
+        public string Title { get; set; }
         [Required]
         public string? Sup_Title { get; set; }
         [Required]

@@ -1,22 +1,31 @@
 ﻿@model IEnumerable<Globe.Data.News>
-
-<div class="main_contant">
-    <div class="title">Sarch</div>
-    @{
-        foreach (var News in Model)
-        {
-        <div class="contant_card">
-            <a asp-action="Post">
-                <img src="~/@News.Img_path">
-            </a>
-            <div class="text">
-                <p>
-                    @News.Title
-                </p>
-            </div>
-        </div>
+@if (Model.Count() > 0)
+{
+    <div class="main_contant">
+        <div class="title">Sarch</div>
+        @{
+            foreach (var News in Model)
+            {
+                <div class="contant_card">
+                    <a asp-action="Post">
+                        <img src="./@News.Img_path">
+                    </a>
+                    <div class="text">
+                        <p>
+                            @News.Title
+                        </p>
+                    </div>
+                </div>
+            }
         }
-    }
-</div>
-    
-
+    </div>
+}
+else
+{
+    <div class="SARCH" id="SARCH">
+        <div class="main_contant">
+            <div class="title">Sarch</div>
+            <div class="ERORR">Sorry NO Resalt</div>
+        </div>
+    </div>
+}
