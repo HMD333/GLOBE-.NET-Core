@@ -5,7 +5,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;
+<<<<<<< HEAD
 using System.IO;
+=======
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 using System.Text.RegularExpressions;
 
 namespace Globe.Controllers
@@ -30,6 +33,7 @@ namespace Globe.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         [HttpPost]
         public IActionResult Create_Plog(create_plog cp)
         {
@@ -123,12 +127,25 @@ namespace Globe.Controllers
         }
 
         
+=======
+
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
         public IActionResult Sarch(string sarch)
         {
             ViewData["Title"] = "Sarch";
 
+<<<<<<< HEAD
             IEnumerable<News> News = _dBContext.News.Where(n => n.Title.Contains(sarch));
+=======
+            IEnumerable<News> News = from n in _dBContext.News
+                                    select n;
+
+            if(!string.IsNullOrEmpty(sarch))
+            {
+                News = News.Where(n => n.Title.Contains(sarch));
+            }
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
             return View(News);
         }
@@ -248,9 +265,13 @@ namespace Globe.Controllers
             string? _usename = null;
             string? _type = null;
 
+<<<<<<< HEAD
             if (r_fname != null && r_lname != null && r_uname != null && r_email != null && r_password != null && r_repassword != null
                 && !r_fname.Any(P => punc.Contains(P)) && !r_lname.Any(P => punc.Contains(P)) && !r_uname.Any(P => punc.Contains(P))
                 && !r_email.Any(P => punc.Contains(P)) && !r_password.Any(P => punc.Contains(P)) && !r_repassword.Any(P => punc.Contains(P)))
+=======
+            if (r_fname != null && r_lname != null && r_uname != null && r_email != null && r_password != null && r_repassword != null)
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
             {
                 IEnumerable<User> User = from u in _dBContext.User
                                          select u;
@@ -312,11 +333,19 @@ namespace Globe.Controllers
             string? _usename = null;
             string? _type = null;
 
+<<<<<<< HEAD
             if (l_username != null && l_password != null && !l_username.Any( P => punc.Contains(P)) && !l_password.Any(P => punc.Contains(P)))
             {
                 IEnumerable<Admin> Admin = _dBContext.Admin.Where(n => 
                                             (n.User_Name == l_username || n.Email == l_username)
                                             && n.Password == l_password);
+=======
+            if (l_username != null && l_password != null)
+            {
+                IEnumerable<Admin> Admin = from u in _dBContext.Admin
+                                           select u;
+                Admin = Admin.Where(n => (n.User_Name == l_username || n.Email == l_username) && n.Password == l_password);
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
                 if (Admin.Any())
                 {
@@ -334,9 +363,15 @@ namespace Globe.Controllers
                 }
                 else
                 {
+<<<<<<< HEAD
                     IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => 
                                                 (n.Username == l_username || n.Email == l_username)
                                                 && n.Password == l_password);
+=======
+                    IEnumerable<Auther> Auther = from u in _dBContext.Auther
+                                                 select u;
+                    Auther = Auther.Where(n => (n.Username == l_username || n.Email == l_username) && n.Password == l_password);
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
                     if (Auther.Any())
                     {
@@ -354,9 +389,15 @@ namespace Globe.Controllers
                     }
                     else
                     {
+<<<<<<< HEAD
                         IEnumerable<User> User = _dBContext.User.Where(n => 
                                                 (n.Usar_Name == l_username || n.Email == l_username)
                                                 && n.password == l_password);
+=======
+                        IEnumerable<User> User = from u in _dBContext.User
+                                                 select u;
+                        User = User.Where(n => (n.Usar_Name == l_username || n.Email == l_username) && n.password == l_password);
+>>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
                         if (User.Any())
                         {
