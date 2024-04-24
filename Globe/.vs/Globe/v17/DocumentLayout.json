@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\home\\dashbord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\dashbord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\views\\home\\health.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\health.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\views\\home\\sarch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\sarch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,7 +36,7 @@
               "RelativeDocumentMoniker": "Globe\\Controllers\\HomeController.cs",
               "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Globe\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAwB8AAAAAAAAA",
+              "ViewState": "AQIAAGEBAAAAAAAAAAAAAGwBAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T20:18:20.287Z",
               "IsPinned": true,
@@ -56,78 +44,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Dashbord.cshtml",
+              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Dashbord.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Dashbord.cshtml",
+              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Dashbord.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Dashbord.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAACMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T17:11:17.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Globe\\wwwroot\\css\\site.css",
               "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Globe\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAADgBAAAAAAAAAAAAAEUBAAABAAAA",
+              "ViewState": "AQIAAAoCAAAAAAAAAADgvxYCAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-22T08:24:00.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "Globe\\Data\\ApplicationDBContext.cs",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Data\\ApplicationDBContext.cs",
-              "RelativeToolTip": "Globe\\Data\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAnwBAAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T06:30:14.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "News.cs",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Models\\News.cs",
-              "RelativeDocumentMoniker": "Globe\\Models\\News.cs",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Models\\News.cs",
-              "RelativeToolTip": "Globe\\Models\\News.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T06:22:33.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Health.cshtml",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Health.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Health.cshtml",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Health.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Health.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T17:38:39.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sarch.cshtml",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Sarch.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Sarch.cshtml",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Sarch.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Sarch.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAYwAkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T17:37:08.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Globe\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Globe\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAB0BAAAAAAAAAAAAACcBAABHAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowBMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-19T17:13:05.903Z",
               "EditorCaption": ""

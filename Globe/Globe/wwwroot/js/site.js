@@ -333,3 +333,15 @@ RB_el.forEach(radio => {
     
 });
 
+const inputElements = document.querySelectorAll('.pop_SingUP input');
+
+inputElements.forEach(input => {
+    input.addEventListener('input', function () {
+        if (input.value.trim() !== '') {
+            input.classList.add('filled');
+        } else {
+            input.classList.remove('filled');
+        }
+    });
+});
+

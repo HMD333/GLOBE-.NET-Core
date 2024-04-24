@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Globe.Data.News>
+
+@{
+    string Sport = "";
+    string Politics = "";
+    string Health = "";
+    string Technology = "";
+
+    
+}
+
+
+@if (Model.Count() > 0)
+{
+    <div class="main_contant">
+        <div class="title">Create Plog</div>
+        @foreach(var news in Model)
+        {
+            if (news.Type == "Sport")
+            {
+                Sport = "checked";
+                Politics = "";
+                Health = "";
+                Technology = "";
+            }
+            else if (news.Type == "Politics")
+            {
+                Sport = "";
+                Politics = "checked";
+                Health = "";
+                Technology = "";
+            }
+            else if (news.Type == "Health")
+            {
+                Sport = "";
+                Politics = "";
+                Health = "checked";
+                Technology = "";
+            }
+            else if (news.Type == "Technology")
+            {
+                Sport = "";
+                Politics = "";
+                Health = "";
+                Technology = "checked";
+            }
+            <form class="Form" asp-action="Update_plog" method="post">
+                <input type="hidden" name="ID" value=@news.Id>
+
+                <div class="AE_F_Text">
+                    <label>Title</label>
+                    <input type="text" name="Title" placeholder="Enter Title" value="@news.Title">
+                </div>
+
+                <div class="AE_F_Text">
+                    <label>Sub Title</label>
+                    <input type="text" name="Sup_Title" placeholder="Enter Sub Title" value="@news.Sup_Title">
+                </div>
+
+                <div class="AE_F_Text">
+                    <label for="img">Iamges <img src="@news.Img_path"></label>
+
+                    <input name="Img" id="img" hidden>
+                    <div class="img_ph"></div>
+                </div>
+
+                <div class="AE_F_Text">
+                    <label>The NEWS</label>
+                    <textarea name="the-news" name="Article">@news.Article</textarea>
+                </div>
+
+                <label class="rb_tit">NEWS Type</label>
+                <div class="AE_F_Text">
+                    <label>Spore</label>
+                    <input type="radio" name="Type" value="Sport" @Sport/>
+                </div>
+
+                <div class="AE_F_Text">
+                    <label>Politics</label>
+                    <input type="radio" name="Type" value="Politics" @Politics/>
+                </div>
+
+                <div class="AE_F_Text">
+                    <label>Health</label>
+                    <input type="radio" name="Type" value="Health" @Health/>
+                </div>
+                <div class="AE_F_Text">
+                    <label>Technology</label>
+                    <input type="radio" name="Type" value="Technology" @Technology/>
+                </div>
+
+                <div class="AE_F_Text">
+                    <input type="button" name="title" value="submit">
+                </div>
+            </form>
+        }
+        
+    </div>
+}
+else
+{
+    <div class="SARCH" id="SARCH">
+        <div class="main_contant">
+            <div class="title">Edit Post</div>
+            <div class="ERORR">Sorry NO Resalt</div>
+        </div>
+    </div>
+}

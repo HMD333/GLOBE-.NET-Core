@@ -1,6 +1,4 @@
 ﻿@using System.Web;
-@using Microsoft.AspNetCore.Http;
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +8,54 @@
     <title>@ViewData["Title"] - Globe</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
+@{
+    bool Home = false;
+    bool Politics = false;
+    bool Health = false;
+    bool Sport = false;
+    bool Technology = false;
+}
+@if(ViewData["Title"] == "Home")
+{
+    Home = true;
+    Politics = false;
+    Health = false;
+    Sport = false;
+    Technology = false;
+}
+else if (ViewData["Title"] == "Politics")
+{
+    Home = false;
+    Politics = true;
+    Health = false;
+    Sport = false;
+    Technology = false;
+}
+else if (ViewData["Title"] == "Health")
+{
+    Home = false;
+    Politics = false;
+    Health = true;
+    Sport = false;
+    Technology = false;
+}
+else if (ViewData["Title"] == "Sport")
+{
+    Home = false;
+    Politics = false;
+    Health = false;
+    Sport = true;
+    Technology = false;
+}
+else if (ViewData["Title"] == "Technology")
+{
+    Home = false;
+    Politics = false;
+    Health = false;
+    Sport = false;
+    Technology = true;
+}
+
 
 <body>
     
@@ -32,27 +78,27 @@
             <div class="nav_item">
                 <ul>
                     <li>
-                        <a asp-action="Index" active=true id="Home" onclick="Home_active()">Home</a>
+                        <a asp-action="Index" active=@Home id="Home">Home</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a asp-action="Politics" active=false id="Politics" onclick="Politics_active()">Politics</a>
+                        <a asp-action="Politics" active=@Politics id="Politics">Politics</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a asp-action="Health" active=false id="Health" onclick="Health_active()">Health</a>
+                        <a asp-action="Health" active=@Health id="Health">Health</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a asp-action="Sport" active=false id="Sport" onclick="Sport_active()">Sport</a>
+                        <a asp-action="Sport" active=@Sport id="Sport">Sport</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
                     <li>
-                        <a asp-action="Technology" active=false id="Technology" onclick="Technology_active()">Technology</a>
+                        <a asp-action="Technology" active=@Technology id="Technology">Technology</a>
                         <div class="nav_item_underline"></div>
                     </li>
 
@@ -95,7 +141,8 @@
                                              <p>@cookieName</p>
                                                 <img src="~/asedes/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png">
                                             </a>
-                                        }else if(cookieValue == "ur")
+                                        }
+                                        else if(cookieValue == "ur")
                                         {
                                             <a id="Acount" class="acount_img" onclick="Us_Acount_active()">
                                                 <p>@cookieName</p>
@@ -121,15 +168,18 @@
                                                         </li>
 
                                                         <li>
-                                                            <a asp-action="Dashbord">View plog</a>
+                                                            <form asp-action="Dashbord" method="post">
+                                                                <label for="dash">View plog</label>
+                                                                <input type="submit" id="dash" hidden/>
+                                                            </form>
                                                         </li>
 
                                                         <div class="slpet"></div>
 
                                                         <li>
                                                             <a asp-action="logout" onclick="logout()"
-                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('asedes/Picture1.png')">
                                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
                                                             </a>
                                                         </li>
@@ -156,8 +206,8 @@
                                                         <div class="slpet"></div>
                                                         <li>
                                                             <a asp-action="logout" onclick="logout()"
-                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('asedes/Picture1.png')">
                                                                 Logout <img src="asedes/Picture1.png" id="logoicon">
                                                             </a>
                                                         </li>
@@ -182,7 +232,10 @@
                                                         </li>
 
                                                         <li>
-                                                            <a asp-action="Dashbord">View plog</a>
+                                                            <form asp-action="Dashbord" method="post">
+                                                                <label for="dash">View plog</label>
+                                                                <input type="submit" id="dash" hidden />
+                                                            </form>
                                                         </li>
 
                                                         <li>
@@ -193,9 +246,9 @@
 
                                                         <li>
                                                             <a asp-action="logout" onclick="logout()"
-                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
-                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
-                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                               onmouseenter="logout_icon('./asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('./asedes/Picture1.png')">
+                                                                Logout <img src="./asedes/Picture1.png" id="logoicon">
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -261,12 +314,12 @@
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="r_password" id="spass">
+                                    <input type="password" name="r_password" id="spass">
                                     <label for="spass">Password</label>
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="r_repassword" id="srepass">
+                                    <input type="password" name="r_repassword" id="srepass">
                                     <label for="srepass">Repassword</label>
                                 </div>
 
@@ -293,7 +346,7 @@
                                 </div>
 
                                 <div class="feeld">
-                                    <input type="text" name="l_password" id="lpass">
+                                    <input type="password" name="l_password" id="lpass">
                                     <label for="lpass">Password</label>
                                 </div>
 
@@ -323,14 +376,6 @@
     <footer>
         <div class="F_left">
             <div class="F_top">
-                <div class="f_News">
-                    <ul>
-                        <li><a asp-action="News">News</a></li>
-                        <li><a asp-action="News">Live TV</a></li>
-                        <li><a asp-action="News">GLOBE Films</a></li>
-                        <li><a asp-action="News">HLM</a></li>
-                    </ul>
-                </div>
                 <div class="f_Politics">
                     <ul>
                         <li><a asp-action="Politics">Politics</a></li>

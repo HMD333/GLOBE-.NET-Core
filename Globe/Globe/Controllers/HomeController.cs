@@ -5,10 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;
-<<<<<<< HEAD
 using System.IO;
-=======
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 using System.Text.RegularExpressions;
 
 namespace Globe.Controllers
@@ -33,7 +30,7 @@ namespace Globe.Controllers
             return View();
         }
 
-<<<<<<< HEAD
+
         [HttpPost]
         public IActionResult Create_Plog(create_plog cp)
         {
@@ -127,25 +124,44 @@ namespace Globe.Controllers
         }
 
         
-=======
+[HttpPost]
+public IActionResult Edit_Account(Edit_Account ea)
+{
+    if(ea != null)
+    {
 
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
+        string Au_Type = Request.Cookies["User_type"];
 
+        string Fname;
+        string Lname;
+
+        if (Au_Type == "au")
+        {
+            IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => n.Username == Request.Cookies["User_Name"]);
+            Fname = Auther.First().Fist_Name;
+            Lname = Auther.First().Last_Name;
+        }
+        else if (Au_Type == "ur")
+        {
+            IEnumerable<User> User = _dBContext.User.Where(n => n.Usar_Name == Request.Cookies["User_Name"]);
+        }
+
+        _dBContext.SaveChanges();
+    }
+    else
+    {
+        return View();
+    }
+
+
+    return RedirectToAction("Index");
+}
         public IActionResult Sarch(string sarch)
         {
             ViewData["Title"] = "Sarch";
 
-<<<<<<< HEAD
             IEnumerable<News> News = _dBContext.News.Where(n => n.Title.Contains(sarch));
-=======
-            IEnumerable<News> News = from n in _dBContext.News
-                                    select n;
-
-            if(!string.IsNullOrEmpty(sarch))
-            {
-                News = News.Where(n => n.Title.Contains(sarch));
-            }
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
+            
 
             return View(News);
         }
@@ -204,11 +220,151 @@ namespace Globe.Controllers
             ViewData["Title"] = "Create Plog";
             return View();
         }
-
+        [HttpPost]
         public IActionResult Dashbord()
         {
             ViewData["Title"] = "Dashbord";
-            return View();
+            string Au_Type = Request.Cookies["User_type"];
+            string Au_name = Request.Cookies["User_Name"];
+            string Type = "";
+
+            int ID = 0;
+
+            if (Au_Type == "ad")
+            {
+                IEnumerable<Admin> Admin = _dBContext.Admin.Where(n => n.User_Name == Au_name);
+                if (Admin.Any())
+                {
+                    ID = Admin.First().Id;
+                    Type = "Admin";
+                }
+            }
+            else if (Au_Type == "au")
+            {
+                IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => n.Username == Au_name);
+                if (Auther.Any())
+                {
+                    ID = Auther.First().Id;
+                    Type = "Auther";
+                }
+            }
+            IEnumerable<News> news = _dBContext.News.Where(n =>n.Au_Type == Type && n.AU_id == ID);
+            return View(news);
+        }
+
+        [HttpPost]
+        public IActionResult Edit_Plog()
+        {
+            ViewData["Title"] = "Edit Post";
+
+            string post_id = Request.Form["ID"];
+
+            int id = Convert.ToInt32(post_id);
+
+            IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
+
+
+            return View(news);
+        }
+
+        [HttpPost]
+        public IActionResult Update_plog()
+        {
+            string news_id = Request.Form["ID"];
+            int id = Convert.ToInt32(news_id);
+            string Title = Request.Form["Title"];
+            string Sup_Title = Request.Form["Sup_Title"];
+            string Img = Request.Form["Img"];
+            string Article = Request.Form["Article"];
+            string Type = Request.Form["Type"];
+
+            if (id != null && Title != null && Sup_Title != null && Img != null && Article != null && Type != null
+                && !Title.Any(P => punc.Contains(P)) && !Title.Any(P => punc.Contains(P)) && !Sup_Title.Any(P => punc.Contains(P)) 
+                && !Img.Any(P => punc.Contains(P)) && !Article.Any(P => punc.Contains(P)) && !Type.Any(P => punc.Contains(P)))
+            {
+                byte[] fileBytes = System.IO.File.ReadAllBytes(Img);
+                string fileName = Path.GetFileName(Img);
+                IFormFile imgFile = new FormFile(new MemoryStream(fileBytes), 0, Img.Length, null, Img);
+                IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
+
+                var update = news.First();
+
+                update.Title = Title;
+                update.Type = Type;
+                update.Article = Article;
+                update.Sup_Title = Sup_Title;
+                update.Date_Time = DateTime.Now;
+
+                string path = Path.GetExtension(imgFile.FileName);
+                string imgUrl = "";
+                if (path == ".png" || path == ".jpg")
+                {
+
+                    if (update.Type == "Spore")
+                    {
+                        string folder = "wwwroot/asedes/img/Spore/";
+                        folder += Guid.NewGuid().ToString() + path;
+                        string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
+
+                        imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
+
+                        imgUrl = folder;
+                    }
+                    else if (update.Type == "Politics")
+                    {
+                        string folder = "wwwroot/asedes/img/Politics/";
+                        folder += Guid.NewGuid().ToString() + path;
+                        string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
+
+                        imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
+
+                        imgUrl = folder;
+                    }
+                    else if (update.Type == "Health")
+                    {
+                        string folder = "wwwroot/asedes/img/Health/";
+                        folder += Guid.NewGuid().ToString() + path;
+                        string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
+
+                        imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
+
+                        imgUrl = folder;
+                    }
+                    else if (update.Type == "Technology")
+                    {
+                        string folder = "wwwroot/asedes/img/Technology/";
+                        folder += Guid.NewGuid().ToString() + path;
+                        string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
+
+                        imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
+
+                        imgUrl = folder;
+                    }
+
+                    update.Img_path = imgUrl;
+
+                    _dBContext.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+
+            return RedirectToAction("Edit_Plog");
+        }
+
+
+        [HttpPost]
+        public IActionResult Delete_Plog()
+        {
+            string news_id = Request.Form["ID"];
+            int id = Convert.ToInt32(news_id);
+
+            IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
+
+            var delete = news.First();
+
+            _dBContext.News.Remove(delete);
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Edit_Account()
@@ -265,13 +421,10 @@ namespace Globe.Controllers
             string? _usename = null;
             string? _type = null;
 
-<<<<<<< HEAD
             if (r_fname != null && r_lname != null && r_uname != null && r_email != null && r_password != null && r_repassword != null
                 && !r_fname.Any(P => punc.Contains(P)) && !r_lname.Any(P => punc.Contains(P)) && !r_uname.Any(P => punc.Contains(P))
                 && !r_email.Any(P => punc.Contains(P)) && !r_password.Any(P => punc.Contains(P)) && !r_repassword.Any(P => punc.Contains(P)))
-=======
-            if (r_fname != null && r_lname != null && r_uname != null && r_email != null && r_password != null && r_repassword != null)
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
+
             {
                 IEnumerable<User> User = from u in _dBContext.User
                                          select u;
@@ -333,19 +486,11 @@ namespace Globe.Controllers
             string? _usename = null;
             string? _type = null;
 
-<<<<<<< HEAD
             if (l_username != null && l_password != null && !l_username.Any( P => punc.Contains(P)) && !l_password.Any(P => punc.Contains(P)))
             {
                 IEnumerable<Admin> Admin = _dBContext.Admin.Where(n => 
                                             (n.User_Name == l_username || n.Email == l_username)
                                             && n.Password == l_password);
-=======
-            if (l_username != null && l_password != null)
-            {
-                IEnumerable<Admin> Admin = from u in _dBContext.Admin
-                                           select u;
-                Admin = Admin.Where(n => (n.User_Name == l_username || n.Email == l_username) && n.Password == l_password);
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
                 if (Admin.Any())
                 {
@@ -363,15 +508,10 @@ namespace Globe.Controllers
                 }
                 else
                 {
-<<<<<<< HEAD
                     IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => 
                                                 (n.Username == l_username || n.Email == l_username)
                                                 && n.Password == l_password);
-=======
-                    IEnumerable<Auther> Auther = from u in _dBContext.Auther
-                                                 select u;
-                    Auther = Auther.Where(n => (n.Username == l_username || n.Email == l_username) && n.Password == l_password);
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
+
 
                     if (Auther.Any())
                     {
@@ -389,15 +529,9 @@ namespace Globe.Controllers
                     }
                     else
                     {
-<<<<<<< HEAD
                         IEnumerable<User> User = _dBContext.User.Where(n => 
                                                 (n.Usar_Name == l_username || n.Email == l_username)
                                                 && n.password == l_password);
-=======
-                        IEnumerable<User> User = from u in _dBContext.User
-                                                 select u;
-                        User = User.Where(n => (n.Usar_Name == l_username || n.Email == l_username) && n.password == l_password);
->>>>>>> 962e3c9dac42ea7dd04286f1070b1be40aa7d257
 
                         if (User.Any())
                         {

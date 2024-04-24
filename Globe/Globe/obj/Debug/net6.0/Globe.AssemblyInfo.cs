@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Globe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8262e990d4a616075a71d9a61c71771b860c3444")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50de2c6c2ef2714f92662159415ed7b25b177ea8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Globe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Globe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
