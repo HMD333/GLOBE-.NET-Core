@@ -117,7 +117,7 @@ else if (ViewData["Title"] == "Technology")
                         {
                             <div id="nav_login">
                                 <li>
-                                    <a id="LOGIN">LOGIN</a>
+                                <a id="LOGIN" onclick="login()">LOGIN</a>
                                     <div class="nav_item_underline"></div>
                                 </li>
                             </div>
@@ -178,9 +178,9 @@ else if (ViewData["Title"] == "Technology")
 
                                                         <li>
                                                             <a asp-action="logout" onclick="logout()"
-                                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
-                                                               onmouseleave="logout_icon('asedes/Picture1.png')">
-                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                               onmouseenter="logout_icon('~/asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('~/asedes/Picture1.png')">
+                                                                Logout <img src="~/asedes/Picture1.png" id="logoicon">
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -206,9 +206,9 @@ else if (ViewData["Title"] == "Technology")
                                                         <div class="slpet"></div>
                                                         <li>
                                                             <a asp-action="logout" onclick="logout()"
-                                                               onmouseenter="logout_icon('asedes/icons8-logout-100.png')"
-                                                               onmouseleave="logout_icon('asedes/Picture1.png')">
-                                                                Logout <img src="asedes/Picture1.png" id="logoicon">
+                                                               onmouseenter="logout_icon('./asedes/icons8-logout-100.png')"
+                                                               onmouseleave="logout_icon('./asedes/Picture1.png')">
+                                                                Logout <img src="./asedes/Picture1.png" id="logoicon">
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -437,11 +437,6 @@ else if (ViewData["Title"] == "Technology")
     @{
         string JS = ViewBag.JS;
     }
-
-    
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

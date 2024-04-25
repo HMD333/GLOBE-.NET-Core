@@ -68,6 +68,12 @@ var fav_Card_te_el = document.getElementById("fav_Card_te");
 
 let RB_el = document.getElementsByName("fav_Card_rb");
 
+var img = document.getElementById("img");
+
+var img_viue = document.getElementById("img_viue");
+
+var plas = document.getElementById("plas");
+
 //popup sing up & login 
 
 var popup_el = document.getElementById("popup");
@@ -76,179 +82,17 @@ var SINGUP_el = document.getElementById("SingUP");
 
 var LogIN_el = document.getElementById("LogIN");
 
-function Home_active(){
-    home_el.style.display = "block";
-    news_el.style.display = "none";
-    politics_el.style.display = "none";
-    health_el.style.display = "none";
-    sport_el.style.display = "none";
-    technology_el.style.display = "none";
-    sarch_el.style.display = "none";
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-    
 
 
-    Home_el.setAttribute("active", "true");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "false");
-};
 
-function News_active(){
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "true");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "false");
-};
-
-function Politics_active(){
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "true");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "false");
-};
-
-function Health_active(){
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "true");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "false");
-};
-
-function Sport_active(){
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "true");
-    Technology_el.setAttribute("active", "false");
-};
-
-function Technology_active(){
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "true");
-};
-
-function Sarch() {
-    favuret_el.style.display = "none";
-    create_contant_el.style.display = "none";
-    your_contant_el.style.display = "none";
-    create_account_el.style.display = "none";
-    edit_account_el.style.display = "none";
-
-    Home_el.setAttribute("active", "false");
-    News_el.setAttribute("active", "false");
-    Politics_el.setAttribute("active", "false");
-    Health_el.setAttribute("active", "false");
-    Sport_el.setAttribute("active", "false");
-    Technology_el.setAttribute("active", "false");
-};
-
-function Acount_altrat(){
-    Close_acount_popup()
-
-    Home_active()
-    home_el.style.display = "none";
-    edit_account_el.style.display = "block";
-
-
-    Home_el.setAttribute("active", "false");
-};
-
-function Favuret(){
-    Close_acount_popup()
-
-    Home_active()
-    home_el.style.display = "none";
-    favuret_el.style.display = "block";
-
-
-    Home_el.setAttribute("active", "false");
-};
 
 
 function Create_Contant(){
     Close_acount_popup()
-    
-    Home_active()
-    home_el.style.display = "none";
     create_contant_el.style.display = "block";
-
-
-    Home_el.setAttribute("active", "false");
 };
 
-function Your_Contant(){
-    Close_acount_popup()
-    
-    Home_active()
-    home_el.style.display = "none";
-    your_contant_el.style.display = "block";
 
-
-    Home_el.setAttribute("active", "false");
-};
-
-function Create_Accont(){
-    Close_acount_popup()
-    
-    Home_active()
-    home_el.style.display = "none";
-    create_account_el.style.display = "block";
-
-
-    Home_el.setAttribute("active", "false");
-};
 
 function Ad_Acount_active(){
     admen_acount_popup_el.style.display = "block";
@@ -272,9 +116,9 @@ function Close_acount_popup(){
     user_acount_popup_el.style.display = "none";
 };
 
-log_in_el.addEventListener("click",function(){
+function login(){
     popup_el.style.display = "block";
-});
+};
 
 function Register(){
     SINGUP_el.style.display = "block";
@@ -286,18 +130,6 @@ function use_the_acount(){
     LogIN_el.style.display = "block";
 };
 
-function in_acount(){
-    loged.style.display = "block";
-    not_loged.style.display = "none";
-    Close_popup()
-};
-
-function logout(){
-    loged.style.display = "none";
-    not_loged.style.display = "block";
-    Close_acount_popup()
-    Home_active()
-};
 
 function logout_icon(src){
     logoicon_el.src = src
@@ -345,3 +177,10 @@ inputElements.forEach(input => {
     });
 });
 
+if (img) {
+    img.addEventListener('change', function () {
+        let imgLink = URL.createObjectURL(img.files[0]);
+        img_viue.style.backgroundImage = `url(${imgLink})`;
+        plas.textContent = "";
+    });
+}

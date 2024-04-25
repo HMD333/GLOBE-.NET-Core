@@ -312,6 +312,15 @@ main {
     margin-top: 60px;
 }
 
+.plas {
+    text-align: center;
+    padding-top: 20px;
+    width: 500px;
+    font-size: 160px;
+    color: var(--white);
+}
+
+
 main .most_watched {
     position: relative;
     display: flex;
@@ -775,7 +784,7 @@ main .popup {
     top: 0;
 }
 
-.AE_F_Text input[type = "button"] {
+.AE_F_Text input[type = "submit"] {
     cursor: pointer;
     background-color: var(--white);
     border: transparent;
@@ -786,16 +795,15 @@ main .popup {
     transition: 1.5s;
 }
 
-.AE_F_Text input[type = "button"]:hover {
-    background-color: var(--ligth_bgnav);
-    transition: 1s;
-}
+    .AE_F_Text input[type = "submit"]:hover {
+        background-color: var(--ligth_bgnav);
+        transition: 1s;
+    }
 
-    .AE_F_Text textarea[name="the-news"] {
+    .AE_F_Text textarea[name="Article"] {
         position: absolute;
         left: 290px;
         top: 50px;
-        text-wrap: wrap;
         height: 300px;
         width: 500px;
         padding: 10px;

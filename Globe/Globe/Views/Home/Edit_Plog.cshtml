@@ -58,15 +58,17 @@
                 </div>
 
                 <div class="AE_F_Text">
-                    <label for="img">Iamges <img src="@news.Img_path"></label>
-
-                    <input name="Img" id="img" hidden>
+                <label for="img">Images <img id="img_viue" style="background-image: URL(@news.Img_path); background-size: cover;">
+                <div class="plas" id="plas">+</div>
+                </label>
+                    
+                    <input type="file" name="img" accept="image/*" id="img" hidden>
                     <div class="img_ph"></div>
                 </div>
 
                 <div class="AE_F_Text">
                     <label>The NEWS</label>
-                    <textarea name="the-news" name="Article">@news.Article</textarea>
+                    <textarea name="Article" >@news.Article</textarea>
                 </div>
 
                 <label class="rb_tit">NEWS Type</label>
@@ -90,7 +92,7 @@
                 </div>
 
                 <div class="AE_F_Text">
-                    <input type="button" name="title" value="submit">
+                    <input type="submit" name="title" value="submit">
                 </div>
             </form>
         }

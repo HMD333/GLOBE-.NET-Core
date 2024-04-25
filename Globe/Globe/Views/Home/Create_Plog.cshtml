@@ -1,7 +1,7 @@
 ﻿@model create_plog
 <div class="main_contant">
     <div class="title">Create Plog</div>
-    <form class="Form" asp-action="Create_plog" method="post">
+    <form class="Form" asp-action="Create_plog" method="post" enctype="multipart/form-data">
         <div class="AE_F_Text">
             <label>Title</label>
             <input type="text" asp-for="Title" placeholder="Enter Title">
@@ -13,15 +13,18 @@
         </div>
 
         <div class="AE_F_Text">
-            <label for="img">Iamges <img src="~/asedes/Picture2.png"></label>
+            <label for="img">
+                Images <img id="img_viue" style=" background-size: cover;">
+                <div class="plas" id="plas">+</div>
+            </label>
 
-            <input asp-for="Img" id="img" hidden>
+            <input asp-for="Img" accept="image/*" id="img" hidden>
             <div class="img_ph"></div>
         </div>
 
         <div class="AE_F_Text">
             <label>The NEWS</label>
-            <textarea name="the-news" asp-for="Article"></textarea>
+            <textarea name="Article" asp-for="Article"></textarea>
         </div>
 
         <label class="rb_tit">NEWS Type</label>
@@ -45,7 +48,7 @@
         </div>
 
         <div class="AE_F_Text">
-            <input type="button" name="title" value="submit">
+            <input type="submit" name="title" value="submit">
         </div>
     </form>
 </div>

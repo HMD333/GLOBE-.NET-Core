@@ -1,19 +1,37 @@
 ﻿using Globe.Data;
 using Globe.Models;
 using Globe.Models_DB;
+using Microsoft.Win32.SafeHandles;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Http;
+
 
 namespace Globe.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IWebHostEnvironment _WebHostEnvironment;
-        private char[] punc ={'\'','"',';',',','!','$','{','}','[',']','(',')','%','*'};
+        private char[] punc ={
+            '\'',
+            '"',
+            ';',
+            ',',
+            '!',
+            '$',
+            '{',
+            '}',
+            '[',
+            ']',
+            '(',
+            ')',
+            '%',
+            '*'
+        };
 
         private readonly ApplicationDBContext _dBContext;
 
@@ -41,7 +59,7 @@ namespace Globe.Controllers
 
                 if (cp.Type == "Spore")
                 {
-                    string folder = "wwwroot/asedes/img/Spore/";
+                    string folder = "./asedes/img/Spore/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
@@ -51,7 +69,7 @@ namespace Globe.Controllers
                 }
                 else if (cp.Type == "Politics")
                 {
-                    string folder = "wwwroot/asedes/img/Politics/";
+                    string folder = "./asedes/img/Politics/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
@@ -61,7 +79,7 @@ namespace Globe.Controllers
                 }
                 else if (cp.Type == "Health")
                 {
-                    string folder = "wwwroot/asedes/img/Health/";
+                    string folder = "./asedes/img/Health/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
@@ -71,7 +89,7 @@ namespace Globe.Controllers
                 }
                 else if (cp.Type == "Technology")
                 {
-                    string folder = "wwwroot/asedes/img/Technology/";
+                    string folder = "./asedes/img/Technology/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
@@ -236,7 +254,6 @@ public IActionResult Edit_Account(Edit_Account ea)
                 if (Admin.Any())
                 {
                     ID = Admin.First().Id;
-                    Type = "Admin";
                 }
             }
             else if (Au_Type == "au")
@@ -245,10 +262,9 @@ public IActionResult Edit_Account(Edit_Account ea)
                 if (Auther.Any())
                 {
                     ID = Auther.First().Id;
-                    Type = "Auther";
                 }
             }
-            IEnumerable<News> news = _dBContext.News.Where(n =>n.Au_Type == Type && n.AU_id == ID);
+            IEnumerable<News> news = _dBContext.News.Where(n =>n.Au_Type == Au_Type && n.AU_id == ID);
             return View(news);
         }
 
@@ -278,12 +294,11 @@ public IActionResult Edit_Account(Edit_Account ea)
             string Article = Request.Form["Article"];
             string Type = Request.Form["Type"];
 
-            if (id != null && Title != null && Sup_Title != null && Img != null && Article != null && Type != null
-                && !Title.Any(P => punc.Contains(P)) && !Title.Any(P => punc.Contains(P)) && !Sup_Title.Any(P => punc.Contains(P)) 
-                && !Img.Any(P => punc.Contains(P)) && !Article.Any(P => punc.Contains(P)) && !Type.Any(P => punc.Contains(P)))
+            if (Title != null && Sup_Title != null && Img != null && Article != null && Type != null)
             {
-                byte[] fileBytes = System.IO.File.ReadAllBytes(Img);
                 string fileName = Path.GetFileName(Img);
+
+                byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
                 IFormFile imgFile = new FormFile(new MemoryStream(fileBytes), 0, Img.Length, null, Img);
                 IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
 
@@ -344,11 +359,10 @@ public IActionResult Edit_Account(Edit_Account ea)
                     update.Img_path = imgUrl;
 
                     _dBContext.SaveChanges();
-                    return RedirectToAction("Index");
                 }
             }
 
-            return RedirectToAction("Edit_Plog");
+            return RedirectToAction("Index");
         }
 
 
@@ -363,6 +377,8 @@ public IActionResult Edit_Account(Edit_Account ea)
             var delete = news.First();
 
             _dBContext.News.Remove(delete);
+            _dBContext.SaveChanges();
+
 
             return RedirectToAction("Index");
         }
