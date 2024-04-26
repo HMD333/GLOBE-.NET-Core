@@ -1,206 +1,900 @@
-﻿@* محمد *@
+﻿@model Globe.Data.ApplicationDBContext
+
+
+@{
+
+    IEnumerable<Globe.Data.News> News = Model.News;
+    IEnumerable<Globe.Data.User> User = Model.User;
+    IEnumerable<Globe.Data.Auther> Auther = Model.Auther;
+    var news_by_date = News.OrderBy(t => t.Date_Time);
+    var Sport = News.Where(s => s.Type == "Sport");
+    var Health = News.Where(s => s.Type == "Health");
+    var Politics = News.Where(s => s.Type == "Politics");
+    var Technology = News.Where(s => s.Type == "Technology");
+    string user_type = Context.Request.Cookies["User_type"];
+    string user_name = Context.Request.Cookies["User_Name"];
+
+}
 <div class="HOME" id="HOME">
-    <div class="hot">
-        <div class="title">Hot</div>
 
-            <div class="main_card">
-                <img src="~/asedes/img/News/‏‏لقطة الشاشة (58).png" alt="">
-                <a asp-action="Post"><div class="ops"></div></a>
-                <div class="text">
-                    <p>
+    
 
-                    </p>
-                    <div class="sup_title">
+    @{
+        string Faverat = "";
+        if (user_type == "au")
+        {
+            Auther = Auther.Where(n => n.Username == user_name);
+            if (Auther.Any())
+            {
+                var user = Auther.First();
+                Faverat = user.Faverat;
+                if (Faverat == "Sport")
+                {
+                    if (Sport.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Sport.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Sport.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Sport.Count() > 1)
+                            {
+                            <div class="sup_card">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(1).Id>
+                                    <label for="img2">
+                                        <button>
+                                            <img src="~/@Sport.ElementAtOrDefault(1).Img_path">
+                                        </button>
+                                    </label>
+                                    <input type="submit" id="img2" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Sport.ElementAtOrDefault(1).Title
+                                    </p>
+                                </div>
+
+                            </div>
+                                @if (Sport.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Sport.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Sport.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Health")
+                {
+                    if (Health.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Health.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Health.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Health.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Health.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Health.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Health.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Health.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Health.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Politics")
+                {
+                    if (Politics.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Politics.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Politics.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Politics.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Politics.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Politics.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Politics.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Politics.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Politics.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Technology")
+                {
+                    if (Technology.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Technology.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Technology.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Technology.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Technology.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Technology.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Technology.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Technology.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Technology.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+            }
+        }
+        else if (user_type == "ur")
+        {
+            User = User.Where(n => n.Usar_Name == user_name);
+            if (User.Any())
+            {
+                Faverat = Auther.First().Faverat;
+                if (Faverat == "Sport")
+                {
+                    if (Sport.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Sport.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Sport.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Sport.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Sport.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Sport.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Sport.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Sport.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Sport.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Health")
+                {
+                    if (Health.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Health.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Health.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Health.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Health.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Health.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Health.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Health.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Health.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Health.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Politics")
+                {
+                    if (Politics.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Politics.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Politics.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Politics.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Politics.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Politics.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Politics.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Politics.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Politics.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Politics.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+                else if (Faverat == "Technology")
+                {
+                    if (Technology.Any())
+                    {
+                        <div class="hot">
+                            <div class="title">Hot</div>
+                            <div class="main_card">
+                                <img src="~/@Technology.ElementAtOrDefault(0).Img_path">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(0).Id>
+                                    <label for="img1">
+                                        <div class="ops"></div>
+                                    </label>
+                                    <input type="submit" id="img1" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Technology.ElementAtOrDefault(0).Title
+                                    </p>
+
+                                </div>
+                            </div>
+                            @if (Technology.Count() > 1)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(1).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img src="~/@Technology.ElementAtOrDefault(1).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Technology.ElementAtOrDefault(1).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                                @if (Technology.Count() > 2)
+                                {
+                                    <div class="sup_card">
+                                        <form asp-action="Post" method="post">
+                                            <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(2).Id>
+                                            <label for="img3">
+                                                <button>
+                                                    <img src="~/@Technology.ElementAtOrDefault(2).Img_path">
+                                                </button>
+                                            </label>
+                                            <input type="submit" id="img3" hidden>
+                                        </form>
+                                        <div class="text">
+                                            <p>
+                                                @Technology.ElementAtOrDefault(2).Title
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                }
+                            }
+                            
+                        </div>
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (news_by_date.Count() > 0)
+            {
+                <div class="hot">
+                    <div class="title">Hot</div>
+                    <div class="main_card">
+                        <img src="~/@news_by_date.ElementAtOrDefault(0).Img_path">
+                        <form asp-action="Post" method="post">
+                            <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(0).Id>
+                            <label for="img1">
+                                <div class="ops"></div>
+                            </label>
+                            <input type="submit" id="img1" hidden>
+                        </form>
+                        <div class="text">
+                            <p>
+                                @news_by_date.ElementAtOrDefault(0).Title
+                            </p>
+
+                        </div>
+                    </div>
+                    @if (news_by_date.Count() > 1)
+                    {
+                    <div class="sup_card">
+                        <form asp-action="Post" method="post">
+                            <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(1).Id>
+                            <label for="img2">
+                                <button>
+                                    <img src="~/@news_by_date.ElementAtOrDefault(1).Img_path">
+                                </button>
+                            </label>
+                            <input type="submit" id="img2" hidden>
+                        </form>
+                        <div class="text">
+                            <p>
+                                @news_by_date.ElementAtOrDefault(1).Title
+                            </p>
+                        </div>
+
+                    </div>
+                        @if (news_by_date.Count() > 2)
+                        {
+                            <div class="sup_card">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(2).Id>
+                                    <label for="img3">
+                                        <button>
+                                            <img src="~/@news_by_date.ElementAtOrDefault(2).Img_path">
+                                        </button>
+                                    </label>
+                                    <input type="submit" id="img3" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @news_by_date.ElementAtOrDefault(2).Title
+                                    </p>
+                                </div>
+
+                            </div>
+                        }
+                    }
+                    
+                </div>
+            }
+        }
+        
+        if (news_by_date.Count() > 0)
+        {
+            <div class="most_watched">
+                <div class="title">Most recent</div>
+
+                <div class="sup_card">
+                    <form asp-action="Post" method="post">
+                        <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(0).Id>
+                        <label for="img2">
+                            <button>
+                                <img class="mane_post_img" src="~/@news_by_date.ElementAtOrDefault(0).Img_path">
+                            </button>
+                        </label>
+                        <input type="submit" id="img2" hidden>
+                    </form>
+                    <div class="text">
                         <p>
-
+                            @news_by_date.ElementAtOrDefault(0).Title
                         </p>
                     </div>
 
                 </div>
+
+                @if (news_by_date.Count() > 1)
+                {
+                    <div class="sup_card">
+                        <form asp-action="Post" method="post">
+                            <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(1).Id>
+                            <label for="img2">
+                                <button>
+                                    <img class="mane_post_img" src="~/@news_by_date.ElementAtOrDefault(1).Img_path">
+                                </button>
+                            </label>
+                            <input type="submit" id="img2" hidden>
+                        </form>
+                        <div class="text">
+                            <p>
+                                @news_by_date.ElementAtOrDefault(1).Title
+                            </p>
+                        </div>
+
+                    </div>
+
+                    @if (news_by_date.Count() > 2)
+                    {
+                        <div class="sup_card">
+                            <form asp-action="Post" method="post">
+                                <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(2).Id>
+                                <label for="img2">
+                                    <button>
+                                        <img class="mane_post_img" src="~/@news_by_date.ElementAtOrDefault(2).Img_path">
+                                    </button>
+                                </label>
+                                <input type="submit" id="img2" hidden>
+                            </form>
+                            <div class="text">
+                                <p>
+                                    @news_by_date.ElementAtOrDefault(2).Title
+                                </p>
+                            </div>
+
+                        </div>
+
+                        @if (news_by_date.Count() > 3)
+                        {
+                            <div class="sup_card">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@news_by_date.ElementAtOrDefault(3).Id>
+                                    <label for="img2">
+                                        <button>
+                                            <img class="mane_post_img" src="~/@news_by_date.ElementAtOrDefault(3).Img_path">
+                                        </button>
+                                    </label>
+                                    <input type="submit" id="img2" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @news_by_date.ElementAtOrDefault(3).Title
+                                    </p>
+                                </div>
+
+                            </div>
+                        }
+                    }
+                }
             </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-        </div>
-
-    <div class="most_watched">
-        <div class="title">Most Watched</div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-                    
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
+        }
         
+        if (Technology.Count() > 0)
+        {
 
-    </div>
+            <div class="most_watched">
+                <div class="title">Technology</div>
+                    <div class="sup_card">
+                        <form asp-action="Post" method="post">
+                            <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(0).Id>
+                            <label for="img2">
+                                <button>
+                                    <img class="mane_post_img" src="~/@Technology.ElementAtOrDefault(0).Img_path">
+                                </button>
+                            </label>
+                            <input type="submit" id="img2" hidden>
+                        </form>
+                        <div class="text">
+                            <p>
+                                @Technology.ElementAtOrDefault(0).Title
+                            </p>
+                        </div>
 
-    <div class="most_watched">
-        <div class="title">News</div>
+                    </div>
 
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/News/skynews-the-hague-court_6434004.png">
-            </a>
-            <div class="text">
-                <p>
+                    @if (Technology.Count() > 1)
+                    {
+                        <div class="sup_card">
+                            <form asp-action="Post" method="post">
+                                <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(1).Id>
+                                <label for="img2">
+                                    <button>
+                                        <img class="mane_post_img" src="~/@Technology.ElementAtOrDefault(1).Img_path">
+                                    </button>
+                                </label>
+                                <input type="submit" id="img2" hidden>
+                            </form>
+                            <div class="text">
+                                <p>
+                                    @Technology.ElementAtOrDefault(1).Title
+                                </p>
+                            </div>
 
-                </p>
+                        </div>
+
+                        if (Technology.Count() > 2)
+                        {
+                            <div class="sup_card">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(2).Id>
+                                    <label for="img2">
+                                        <button>
+                                            <img class="mane_post_img" src="~/@Technology.ElementAtOrDefault(2).Img_path">
+                                        </button>
+                                    </label>
+                                    <input type="submit" id="img2" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Technology.ElementAtOrDefault(2).Title
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            if (Technology.Count() > 3)
+                            {
+                                <div class="sup_card">
+                                    <form asp-action="Post" method="post">
+                                        <input type="hidden" name="ID" value=@Technology.ElementAtOrDefault(3).Id>
+                                        <label for="img2">
+                                            <button>
+                                                <img class="mane_post_img" src="~/@Technology.ElementAtOrDefault(3).Img_path">
+                                            </button>
+                                        </label>
+                                        <input type="submit" id="img2" hidden>
+                                    </form>
+                                    <div class="text">
+                                        <p>
+                                            @Technology.ElementAtOrDefault(3).Title
+                                        </p>
+                                    </div>
+
+                                </div>
+                            }
+                        }
+                }
             </div>
-        </div>
+        }
 
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
+        if (Sport.Count() > 0)
+        {
 
-                </p>
+            <div class="most_watched">
+                <div class="title">Sport</div>
+                <div class="sup_card">
+                    <form asp-action="Post" method="post">
+                        <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(0).Id>
+                        <label for="img2">
+                            <button>
+                                <img class="mane_post_img" src="~/@Sport.ElementAtOrDefault(0).Img_path">
+                            </button>
+                        </label>
+                        <input type="submit" id="img2" hidden>
+                    </form>
+                    <div class="text">
+                        <p>
+                            @Sport.ElementAtOrDefault(0).Title
+                        </p>
+                    </div>
+
+                </div>
+
+                @if (Sport.Count() > 1)
+                {
+                    <div class="sup_card">
+                        <form asp-action="Post" method="post">
+                            <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(1).Id>
+                            <label for="img2">
+                                <button>
+                                    <img class="mane_post_img" src="~/@Sport.ElementAtOrDefault(1).Img_path">
+                                </button>
+                            </label>
+                            <input type="submit" id="img2" hidden>
+                        </form>
+                        <div class="text">
+                            <p>
+                                @Sport.ElementAtOrDefault(1).Title
+                            </p>
+                        </div>
+
+                    </div>
+
+                    if (Sport.Count() > 2)
+                    {
+                        <div class="sup_card">
+                            <form asp-action="Post" method="post">
+                                <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(2).Id>
+                                <label for="img2">
+                                    <button>
+                                        <img class="mane_post_img" src="~/@Sport.ElementAtOrDefault(2).Img_path">
+                                    </button>
+                                </label>
+                                <input type="submit" id="img2" hidden>
+                            </form>
+                            <div class="text">
+                                <p>
+                                    @Sport.ElementAtOrDefault(2).Title
+                                </p>
+                            </div>
+
+                        </div>
+
+                        if (Sport.Count() > 3)
+                        {
+                            <div class="sup_card">
+                                <form asp-action="Post" method="post">
+                                    <input type="hidden" name="ID" value=@Sport.ElementAtOrDefault(3).Id>
+                                    <label for="img2">
+                                        <button>
+                                            <img class="mane_post_img" src="~/@Sport.ElementAtOrDefault(3).Img_path">
+                                        </button>
+                                    </label>
+                                    <input type="submit" id="img2" hidden>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        @Sport.ElementAtOrDefault(3).Title
+                                    </p>
+                                </div>
+
+                            </div>
+                        }
+                    }
+                }
             </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-    
-    </div>
-
-    <div class="most_watched">
-        <div class="title">Sport</div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132487331_emilionsuereactsaftermissedpenequatorialguineavsguinea.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-                    
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
-        <div class="sup_card">
-            <a asp-action="Post">
-                <img class="mane_post_img" src="~/asedes/img/Soprt/_132486489_stokes1.png">
-            </a>
-            <div class="text">
-                <p>
-
-                </p>
-            </div>
-
-        </div>
-
-       
-    </div>
+        }
+    }
 </div>
-@* نهاية محمد *@

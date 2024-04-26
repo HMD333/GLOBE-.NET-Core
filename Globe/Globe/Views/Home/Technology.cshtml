@@ -8,15 +8,21 @@
             foreach (var news in Model)
             {
                 <div class="contant_card">
-                    <a asp-action="Post">
-                        <img src="~/@news.Img_path">
-                    </a>
+                    <form asp-action="Post" method="post">
+                        <input type="hidden" name="ID" value=@news.Id>
+                        <label for="img">
+                            <button>
+                                <img src="~/@news.Img_path">
+                            </button>
+                        </label>
+                        <input type="submit" id="img" hidden>
+                    </form>
                     <div class="text">
                         <div class="T_text">
                             <p>@news.Title</p>
                         </div>
                         <div class="ST_text">
-                            <p>@news.Sup_Title</p>
+                            <p>@(news.Sup_Title.Length > 100 ? news.Sup_Title.Substring(0, 100) : news.Sup_Title)...</p>
                         </div>
                     </div>
                 </div>

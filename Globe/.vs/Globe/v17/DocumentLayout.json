@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|e:\\github-folder\\new_folder\\itpg3baqshmer\\globe\\globe\\views\\home\\create_plog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\create_plog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Globe\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Globe\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAgBAAAAAAAAAADwvwoBAABTAAAA",
+              "ViewState": "AQIAANEBAAAAAAAAAAAgwNsBAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T20:18:20.287Z",
               "IsPinned": true,
@@ -36,15 +44,42 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Globe\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Globe\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAF8BAAAAAAAAAAAlwHEBAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-26T09:50:26.364Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create_Plog.cshtml",
-              "DocumentMoniker": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Create_Plog.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Create_Plog.cshtml",
-              "ToolTip": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Create_Plog.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Create_Plog.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABbAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAASwB0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T13:05:58.167Z",
+              "WhenOpened": "2024-04-26T11:12:04.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Post.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Post.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Post.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Post.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Post.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T11:07:21.269Z",
               "EditorCaption": ""
             }
           ]

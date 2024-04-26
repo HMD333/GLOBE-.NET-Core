@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Globe.Data.News>
+﻿@model IEnumerable<Globe.Data.News> 
 
 @{
     string Sport = "";
@@ -13,7 +13,7 @@
 @if (Model.Count() > 0)
 {
     <div class="main_contant">
-        <div class="title">Create Plog</div>
+        <div class="title">Update Plog</div>
         @foreach(var news in Model)
         {
             if (news.Type == "Sport")
@@ -44,7 +44,7 @@
                 Health = "";
                 Technology = "checked";
             }
-            <form class="Form" asp-action="Update_plog" method="post">
+            <form class="Form" asp-action="Update_plog" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="ID" value=@news.Id>
 
                 <div class="AE_F_Text">
@@ -58,11 +58,11 @@
                 </div>
 
                 <div class="AE_F_Text">
-                <label for="img">Images <img id="img_viue" style="background-image: URL(@news.Img_path); background-size: cover;">
-                <div class="plas" id="plas">+</div>
-                </label>
-                    
-                    <input type="file" name="img" accept="image/*" id="img" hidden>
+                    <label for="img">Images <img id="img_viue" style="background-image: URL(.@news.Img_path); background-size: cover;">
+                        <div class="plas" id="plas">+</div>
+                    </label>
+
+                    <input type="file" name="imgFile" accept="image/*" id="img" value="@news.Img_path" hidden>
                     <div class="img_ph"></div>
                 </div>
 

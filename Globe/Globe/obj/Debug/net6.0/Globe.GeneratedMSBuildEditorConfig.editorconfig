@@ -9,83 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Globe
 build_property.RootNamespace = Globe
-build_property.ProjectDir = E:\Github-Folder\New_folder\ITPG3Baqshmer\Globe\Globe\
+build_property.ProjectDir = C:\Users\Lenovo\Desktop\ITPG3Baqshmer\Globe\Globe\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Github-Folder\New_folder\ITPG3Baqshmer\Globe\Globe
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\ITPG3Baqshmer\Globe\Globe
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Account.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Account.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVfQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Plog.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Create_Plog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVfUGxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Dashbord.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Dashbord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Edit_Account.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Edit_Account.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0X0FjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Edit_Plog.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Edit_Plog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0X1Bsb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Favorite.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Favorite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Health.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Health.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWFsdGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Index.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Politics.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Politics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2xpdGljcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Post.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Post.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Sarch.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Sarch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Sport.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Sport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcG9ydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Home/Technology.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Home/Technology.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWNobm9sb2d5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Shared/Error.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/_ViewImports.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/_ViewStart.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github-Folder/New_folder/ITPG3Baqshmer/Globe/Globe/Views/Shared/_Layout.cshtml]
+[C:/Users/Lenovo/Desktop/ITPG3Baqshmer/Globe/Globe/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7lf2g2w4w7

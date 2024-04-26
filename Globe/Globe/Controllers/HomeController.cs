@@ -45,7 +45,8 @@ namespace Globe.Controllers
         {
 
             ViewData["Title"] = "Home";
-            return View();
+
+            return View(_dBContext);
         }
 
 
@@ -57,45 +58,47 @@ namespace Globe.Controllers
             if (path == ".png" || path == ".jpg")
             {
 
-                if (cp.Type == "Spore")
+                if (cp.Type == "Sport")
                 {
-                    string folder = "./asedes/img/Spore/";
+                    string folder = "/asedes/img/Sport/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
+                    Directory.CreateDirectory(Path.GetDirectoryName(sarver_folder));
+
                     cp.Img.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                    imgUrl = folder;
+                    imgUrl = folder.Substring(1);
                 }
                 else if (cp.Type == "Politics")
                 {
-                    string folder = "./asedes/img/Politics/";
+                    string folder = "/asedes/img/Politics/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                     cp.Img.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                    imgUrl = folder;
+                    imgUrl = folder.Substring(1);
                 }
                 else if (cp.Type == "Health")
                 {
-                    string folder = "./asedes/img/Health/";
+                    string folder = "/asedes/img/Health/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                     cp.Img.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                    imgUrl = folder;
+                    imgUrl = folder.Substring(1);
                 }
                 else if (cp.Type == "Technology")
                 {
-                    string folder = "./asedes/img/Technology/";
+                    string folder = "/asedes/img/Technology/";
                     folder += Guid.NewGuid().ToString() + path;
                     string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                     cp.Img.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                    imgUrl = folder;
+                    imgUrl = folder.Substring(1);
                 }
 
                 string Au_Type = Request.Cookies["User_type"];
@@ -140,40 +143,40 @@ namespace Globe.Controllers
 
             return RedirectToAction("Index");
         }
-
         
-[HttpPost]
-public IActionResult Edit_Account(Edit_Account ea)
-{
-    if(ea != null)
-    {
-
-        string Au_Type = Request.Cookies["User_type"];
-
-        string Fname;
-        string Lname;
-
-        if (Au_Type == "au")
+        [HttpPost]
+        public IActionResult Edit_Account(Edit_Account ea)
         {
-            IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => n.Username == Request.Cookies["User_Name"]);
-            Fname = Auther.First().Fist_Name;
-            Lname = Auther.First().Last_Name;
+            if(ea != null)
+            {
+
+                string Au_Type = Request.Cookies["User_type"];
+
+                string Fname;
+                string Lname;
+
+                if (Au_Type == "au")
+                {
+                    IEnumerable<Auther> Auther = _dBContext.Auther.Where(n => n.Username == Request.Cookies["User_Name"]);
+                    Fname = Auther.First().Fist_Name;
+                    Lname = Auther.First().Last_Name;
+                }
+                else if (Au_Type == "ur")
+                {
+                    IEnumerable<User> User = _dBContext.User.Where(n => n.Usar_Name == Request.Cookies["User_Name"]);
+                }
+
+                _dBContext.SaveChanges();
+            }
+            else
+            {
+                return View();
+            }
+
+
+            return RedirectToAction("Index");
         }
-        else if (Au_Type == "ur")
-        {
-            IEnumerable<User> User = _dBContext.User.Where(n => n.Usar_Name == Request.Cookies["User_Name"]);
-        }
 
-        _dBContext.SaveChanges();
-    }
-    else
-    {
-        return View();
-    }
-
-
-    return RedirectToAction("Index");
-}
         public IActionResult Sarch(string sarch)
         {
             ViewData["Title"] = "Sarch";
@@ -230,7 +233,12 @@ public IActionResult Edit_Account(Edit_Account ea)
         public IActionResult Post()
         {
             ViewData["Title"] = "Post";
-            return View();
+
+            string news_id = Request.Form["ID"];
+            int id = Convert.ToInt32(news_id);
+
+            IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
+            return View(news);
         }
 
         public IActionResult Create_Plog()
@@ -238,23 +246,20 @@ public IActionResult Edit_Account(Edit_Account ea)
             ViewData["Title"] = "Create Plog";
             return View();
         }
+
         [HttpPost]
         public IActionResult Dashbord()
         {
             ViewData["Title"] = "Dashbord";
             string Au_Type = Request.Cookies["User_type"];
             string Au_name = Request.Cookies["User_Name"];
-            string Type = "";
 
             int ID = 0;
 
             if (Au_Type == "ad")
             {
-                IEnumerable<Admin> Admin = _dBContext.Admin.Where(n => n.User_Name == Au_name);
-                if (Admin.Any())
-                {
-                    ID = Admin.First().Id;
-                }
+                IEnumerable<News> News = _dBContext.News;
+                return View(News);
             }
             else if (Au_Type == "au")
             {
@@ -284,22 +289,17 @@ public IActionResult Edit_Account(Edit_Account ea)
         }
 
         [HttpPost]
-        public IActionResult Update_plog()
+        public IActionResult Update_plog(IFormFile imgFile)
         {
             string news_id = Request.Form["ID"];
             int id = Convert.ToInt32(news_id);
             string Title = Request.Form["Title"];
             string Sup_Title = Request.Form["Sup_Title"];
-            string Img = Request.Form["Img"];
             string Article = Request.Form["Article"];
             string Type = Request.Form["Type"];
 
-            if (Title != null && Sup_Title != null && Img != null && Article != null && Type != null)
+            if (Title != null && Sup_Title != null && Article != null && Type != null && imgFile != null && imgFile.Length > 0)
             {
-                string fileName = Path.GetFileName(Img);
-
-                byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
-                IFormFile imgFile = new FormFile(new MemoryStream(fileBytes), 0, Img.Length, null, Img);
                 IEnumerable<News> news = _dBContext.News.Where(n => n.Id == id);
 
                 var update = news.First();
@@ -315,45 +315,61 @@ public IActionResult Edit_Account(Edit_Account ea)
                 if (path == ".png" || path == ".jpg")
                 {
 
-                    if (update.Type == "Spore")
+                    if (update.Type == "Sport")
                     {
-                        string folder = "wwwroot/asedes/img/Spore/";
+                        string folder = "/asedes/img/Sport/";
                         folder += Guid.NewGuid().ToString() + path;
                         string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                         imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                        imgUrl = folder;
+                        string past_sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + update.Img_path);
+
+                        System.IO.File.Delete(past_sarver_folder);
+
+                        imgUrl = folder.Substring(1);
                     }
                     else if (update.Type == "Politics")
                     {
-                        string folder = "wwwroot/asedes/img/Politics/";
+                        string folder = "/asedes/img/Politics/";
                         folder += Guid.NewGuid().ToString() + path;
                         string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                         imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                        imgUrl = folder;
+                        string past_sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + update.Img_path);
+
+                        System.IO.File.Delete(past_sarver_folder);
+
+                        imgUrl = folder.Substring(1);
                     }
                     else if (update.Type == "Health")
                     {
-                        string folder = "wwwroot/asedes/img/Health/";
+                        string folder = "/asedes/img/Health/";
                         folder += Guid.NewGuid().ToString() + path;
                         string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                         imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                        imgUrl = folder;
+                        string past_sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + update.Img_path);
+
+                        System.IO.File.Delete(past_sarver_folder);
+
+                        imgUrl = folder.Substring(1);
                     }
                     else if (update.Type == "Technology")
                     {
-                        string folder = "wwwroot/asedes/img/Technology/";
+                        string folder = "/asedes/img/Technology/";
                         folder += Guid.NewGuid().ToString() + path;
                         string sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + folder);
 
                         imgFile.CopyToAsync(new FileStream(sarver_folder, FileMode.Create));
 
-                        imgUrl = folder;
+                        string past_sarver_folder = Path.Combine(_WebHostEnvironment.WebRootPath + update.Img_path);
+
+                        System.IO.File.Delete(past_sarver_folder);
+
+                        imgUrl = folder.Substring(1);
                     }
 
                     update.Img_path = imgUrl;
@@ -364,7 +380,6 @@ public IActionResult Edit_Account(Edit_Account ea)
 
             return RedirectToAction("Index");
         }
-
 
         [HttpPost]
         public IActionResult Delete_Plog()
@@ -457,7 +472,8 @@ public IActionResult Edit_Account(Edit_Account ea)
                             Last_Name = r_lname,
                             Usar_Name = r_uname,
                             password = r_password,
-                            Email = r_email
+                            Email = r_email,
+                            Faverat = "none"
                         });
 
                         _dBContext.SaveChanges();

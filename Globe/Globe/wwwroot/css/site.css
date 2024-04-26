@@ -115,8 +115,12 @@ img {
     padding: 0 20px;
 }
 
-.nav_item li:last-child {
-    margin-left: 350px;
+#nav_login li:last-child {
+    margin-left: 350%;
+}
+
+#nav_logedin li:last-child {
+    margin-left: 175%;
 }
 
 .nav_item a {
@@ -249,8 +253,13 @@ img {
 .card_contant li a img {
     width: 20px;
     position: absolute;
-    right: 35px;
+    left: 90px;
     bottom: 1px;
+}
+
+.card_contant li:last-child a {
+    position: absolute;
+    left: 20px;
 }
 
 

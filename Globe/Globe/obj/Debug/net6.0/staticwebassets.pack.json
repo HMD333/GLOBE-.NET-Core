@@ -1,331 +1,335 @@
 {
   "Files": [
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Globe.bundle.scp.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Globe.bundle.scp.css",
       "PackagePath": "staticwebassets\\Globe.bundle.scp.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\Font\\RobotoCondensed-VariableFont_wght.ttf",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\Font\\RobotoCondensed-VariableFont_wght.ttf",
       "PackagePath": "staticwebassets\\Font\\RobotoCondensed-VariableFont_wght.ttf"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture1.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture1.png",
       "PackagePath": "staticwebassets\\asedes\\Picture1.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture2.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\Picture2.png",
       "PackagePath": "staticwebassets\\asedes\\Picture2.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\icons8-logout-100.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\icons8-logout-100.png",
       "PackagePath": "staticwebassets\\asedes\\icons8-logout-100.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\568140.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\568140.png",
       "PackagePath": "staticwebassets\\asedes\\img\\568140.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\BGIMG.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\BGIMG.png",
       "PackagePath": "staticwebassets\\asedes\\img\\BGIMG.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO.png",
       "PackagePath": "staticwebassets\\asedes\\img\\LOGO.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO_F.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\LOGO_F.png",
       "PackagePath": "staticwebassets\\asedes\\img\\LOGO_F.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture1.jpg",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture1.jpg",
       "PackagePath": "staticwebassets\\asedes\\img\\Picture1.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture2.jpg",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture2.jpg",
       "PackagePath": "staticwebassets\\asedes\\img\\Picture2.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture3.jpg",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture3.jpg",
       "PackagePath": "staticwebassets\\asedes\\img\\Picture3.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture4.jpg",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Picture4.jpg",
       "PackagePath": "staticwebassets\\asedes\\img\\Picture4.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Politics\\274666a6-97bc-4166-b0ab-efdf609f322f.jpg",
-      "PackagePath": "staticwebassets\\asedes\\img\\Politics\\274666a6-97bc-4166-b0ab-efdf609f322f.jpg"
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Sport\\4bd6a1a9-2ec8-45a6-8c13-688c45b4e933.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Sport\\4bd6a1a9-2ec8-45a6-8c13-688c45b4e933.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Politics\\2b363dcb-7bb3-4dcd-a0f9-97860c9b3371.jpg",
-      "PackagePath": "staticwebassets\\asedes\\img\\Politics\\2b363dcb-7bb3-4dcd-a0f9-97860c9b3371.jpg"
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Sport\\6839097c-d8d5-4d4a-931b-b52158d9e3de.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Sport\\6839097c-d8d5-4d4a-931b-b52158d9e3de.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Soprt\\gettyimages-2149719231.jpg",
-      "PackagePath": "staticwebassets\\asedes\\img\\Soprt\\gettyimages-2149719231.jpg"
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Sport\\9e758c0c-afbd-485f-b527-26bed9e9f549.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Sport\\9e758c0c-afbd-485f-b527-26bed9e9f549.jpg"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\sarch.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\Sport\\b5f83d94-b7e7-4ce5-858a-712aca919b89.jpg",
+      "PackagePath": "staticwebassets\\asedes\\img\\Sport\\b5f83d94-b7e7-4ce5-858a-712aca919b89.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\img\\sarch.png",
       "PackagePath": "staticwebassets\\asedes\\img\\sarch.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png",
       "PackagePath": "staticwebassets\\asedes\\png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-post-office-protest_6413847.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-post-office-protest_6413847.png",
       "PackagePath": "staticwebassets\\asedes\\skynews-post-office-protest_6413847.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-serco-doncaster-prison_5914750.png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\skynews-serco-doncaster-prison_5914750.png",
       "PackagePath": "staticwebassets\\asedes\\skynews-serco-doncaster-prison_5914750.png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (90).png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (90).png",
       "PackagePath": "staticwebassets\\asedes\\‏‏لقطة الشاشة (90).png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (92).png",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\asedes\\‏‏لقطة الشاشة (92).png",
       "PackagePath": "staticwebassets\\asedes\\‏‏لقطة الشاشة (92).png"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\Github-Folder\\New_folder\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

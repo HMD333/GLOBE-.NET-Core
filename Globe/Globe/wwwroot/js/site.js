@@ -182,5 +182,6 @@ if (img) {
         let imgLink = URL.createObjectURL(img.files[0]);
         img_viue.style.backgroundImage = `url(${imgLink})`;
         plas.textContent = "";
+        img.value = `${imgLink}`;
     });
 }

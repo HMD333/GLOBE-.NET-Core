@@ -10,7 +10,7 @@
                     <input type="hidden" name="ID" value=@news.Id>
                     <label for="img">
                         <button>
-                            <img src="@news.Img_path">
+                            <img src="~/@news.Img_path">
                         </button>
                     </label>
                     <input type="submit" id="img" hidden>
@@ -20,16 +20,16 @@
                         <p>@news.Title</p>
                     </div>
                     <div class="ST_text">
-                        <p>@news.Sup_Title</p>
+                        <p>@(news.Sup_Title.Length > 100 ? news.Sup_Title.Substring(0, 100) : news.Sup_Title)...</p>
                     </div>
                 </div>
                 <div class="edit">
                     <form asp-action="Edit_Plog" method="post">
                         <input type="hidden" name="ID" value=@news.Id>
-                        <label for="EB">
+                        <label for="EB1">
                             <button>EDIT</button>
                         </label>
-                        <input type="submit" id="EB" hidden>
+                        <input type="submit" id="EB1" hidden>
                     </form>
                 </div>
                 <div class="delete">
