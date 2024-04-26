@@ -10,7 +10,6 @@ namespace Globe.Data
         public string? Fist_Name { get; set; }
         [Required]
         public string? Last_Name { get; set; }
-        public string Faverat { get; set; }
         [Required]
         public string? Username { get; set; }
         [Required]
