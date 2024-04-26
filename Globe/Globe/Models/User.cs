@@ -12,7 +12,6 @@ namespace Globe.Data
         public string? Last_Name { get; set; }
         [Required]
         public string? Usar_Name { get; set; }
-        public sbyte? Faverat { get; set; }
         [Required]
         [PasswordPropertyText]
         public string? password { get; set; }
