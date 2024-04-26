@@ -224,12 +224,6 @@ namespace Globe.Controllers
             return View(News);
         }
 
-        public IActionResult Favorite()
-        {
-            ViewData["Title"] = "Favorite";
-            return View();
-        }
-
         public IActionResult Post()
         {
             ViewData["Title"] = "Post";
@@ -472,8 +466,7 @@ namespace Globe.Controllers
                             Last_Name = r_lname,
                             Usar_Name = r_uname,
                             password = r_password,
-                            Email = r_email,
-                            Faverat = "none"
+                            Email = r_email
                         });
 
                         _dBContext.SaveChanges();

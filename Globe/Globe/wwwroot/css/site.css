@@ -197,6 +197,7 @@ img {
 }
 
 .acount_bg_card .card {
+    border: 2px solid var(--white);
     width: 150px;
     height: 200px;
     background-color: var(--footer);
@@ -213,11 +214,11 @@ img {
 }
 
 .acount_bg_card .card[account_type="Auther"] {
-    height: 240px;
+    height: 160px;
 }
 
 .acount_bg_card .card[account_type="User"] {
-    height: 170px;
+    height: 50px;
 }
 
 .card .card_contant {

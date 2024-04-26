@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|c:\\users\\lenovo\\desktop\\itpg3baqshmer\\globe\\globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65175ACB-FEC5-4908-B909-10A3414DA02D}|Globe\\Globe.csproj|solutionrelative:globe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Globe\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Globe\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAANEBAAAAAAAAAAAgwNsBAAArAAAA",
+              "ViewState": "AQIAAJYBAAAAAAAAAAAEwJoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T20:18:20.287Z",
               "IsPinned": true,
@@ -44,13 +44,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Globe\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Globe\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAF8BAAAAAAAAAAAlwHEBAAAmAAAA",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAnwNwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-26T09:50:26.364Z",
               "IsPinned": true,
@@ -58,28 +58,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAASwB0AAAAnAAAA",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAANEAAAAAAAAAAAAowOEAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T11:12:04.148Z",
+              "WhenOpened": "2024-04-26T21:44:35.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Post.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Post.cshtml",
-              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Post.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Post.cshtml",
-              "RelativeToolTip": "Globe\\Views\\Home\\Post.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Globe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\ITPG3Baqshmer\\Globe\\Globe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Globe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-26T11:07:21.269Z",
+              "WhenOpened": "2024-04-26T11:12:04.148Z",
               "EditorCaption": ""
             }
           ]
