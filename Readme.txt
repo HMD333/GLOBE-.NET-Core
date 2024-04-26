@@ -1,1 +1,1 @@
-GLOBE is a News web set that used to read new news 
+GLOBE is an innovative and comprehensive news website that focuses on sports, health, politics, and technology. With a sleek design and user-friendly interface, GLOBE delivers up-to-date news, in-depth analysis, expert opinions, and engaging content in these four key areas. It aims to keep readers well-informed and engaged with reliable and insightful information, making it a go-to platform for individuals seeking diverse news and insights.
